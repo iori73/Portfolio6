@@ -1,7 +1,8 @@
 function Work1() {
     return (
-      <div>Work1
-    
+      <div>
+        <p>Work1</p>
+        <img src="icons/designer&frontend.svg" alt="designer&frontend" />
       </div>
     )
   }

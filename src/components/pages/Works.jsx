@@ -132,6 +132,7 @@ const Works = ({ isJapanese }) => {
               {WorksData[0].descEN}
             </p>
 
+            <Link to="/work1">
             <svg
               className="arrow-container arrow-adjust"
               width="70"
@@ -160,6 +161,7 @@ const Works = ({ isJapanese }) => {
                 fill="#065D44"
               />
             </svg>
+            </Link>
           </div>
         </div>
       </div>
@@ -258,6 +260,7 @@ const Works = ({ isJapanese }) => {
               {WorksData[1].descJP}
             </p>
 
+            <Link to="/work2">
             <svg
               className="arrow-container"
               width="70"
@@ -286,6 +289,7 @@ const Works = ({ isJapanese }) => {
                 fill="#065D44"
               />
             </svg>
+            </Link>
           </div>
         </div>
       </div>

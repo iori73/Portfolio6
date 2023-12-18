@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Header, Hero, Bio, Works, Footer, Note, Lottie1 } from "../../index";
 import Skeleton from "react-loading-skeleton";
 
-import App from "./Skeleton/App";
+// import App from "./Skeleton/App";
 
 function Home({ isJapanese }) {
   const [scrollY, setScrollY] = useState(0);
@@ -88,14 +88,14 @@ function Home({ isJapanese }) {
 
   console.log(profileAnimation);
 
-  function handleProfileImageLoaded(imgKey) {
-    console.log(`Global Profile Image ${imgKey} loaded`);
-    setProfileImageLoaded((prev) => {
-      const newState = { ...prev, [imgKey]: true };
-      console.log(newState);
-      return newState;
-    });
-  }
+  // function handleProfileImageLoaded(imgKey) {
+  //   console.log(`Global Profile Image ${imgKey} loaded`);
+  //   setProfileImageLoaded((prev) => {
+  //     const newState = { ...prev, [imgKey]: true };
+  //     console.log(newState);
+  //     return newState;
+  //   });
+  // }
 
   return (
     <section className="home">
@@ -111,14 +111,6 @@ function Home({ isJapanese }) {
         transition={{ duration: 0.6, type: "ease-in-out" }}
       />
 
-      {/* 🌸🌸🌸 */}
-      {/* <motion.img
-      className="global-img-profile"
-      src="profile-min.jpg"
-      alt="image of me"
-      style={profileStyle}
-      transition={{ duration: 1, type: "ease-in-out" }}
-    /> */}
       <Bio isJapanese={isJapanese} />
       <Works isJapanese={isJapanese} />
       <Note isJapanese={isJapanese} />

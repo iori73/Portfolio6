@@ -167,7 +167,7 @@ const Note = ({ isJapanese }) => {
                 rx="35"
                 transform="matrix(-1 0 0 1 70 0)"
                 fill="white"
-                fill-opacity="0.5"
+                fillOpacity="0.5"
               />
               {/* <path
                 className="arrow-border"

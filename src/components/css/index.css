@@ -741,15 +741,8 @@ p {
   #translate {
     top: 5rem;
     right: 0.5rem;
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
-  }
-
-  #translate {
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    /* margin: 0 auto; */
-    /* width: 20px; */
   }
 
   /* HERO */

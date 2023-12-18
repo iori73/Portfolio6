@@ -2,7 +2,7 @@ const WorksData = [
   {
     id: 1,
     date: 'Nov 2023',
-    toolLogo: 'Figma logo.png',
+    toolLogo: 'Figma logo.svg',
     periodJP: '1.5ヶ月',
     periodEN: '1.5 month',
     semiTitleJP: 'AIとのチャットで詳細な自己分析と最適な企業とのマッチングを実現',
@@ -35,7 +35,7 @@ const WorksData = [
   {
     id: 2,
     date: 'Nov 2023',
-    toolLogo: 'Figma logo.png',
+    toolLogo: 'Figma logo.svg',
     periodJP: '1週間',
     periodEN: '1 week',
     semiTitleJP: 'インターンシップ選考課題 家計簿アプリ ',

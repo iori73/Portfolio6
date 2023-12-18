@@ -817,7 +817,7 @@ p {
   .img-ig {
     width: 34vw;
     height: auto;
-    transform: translate(-28vw, -17vh);
+    transform: translate(-28vw, -18vh);
   }
   
   .img-aus1 {
@@ -829,7 +829,7 @@ p {
   .img-aus3 {
     width: 46vw;
     height: auto;
-    transform: translate(-77vw, -19vh);
+    transform: translate(-69vw,-21vh);
   }
   
   /* row2 */

@@ -104,6 +104,7 @@
 }
 
 .work-tool-logo {
+  width: 5%;
 }
 
 .work-period {
@@ -278,6 +279,12 @@
     font-size: 1rem;
     white-space: nowrap;
   }
+
+  
+.work-tool-logo {
+  width: 10%;
+}
+
 
   .work-period {
     flex-direction: column;

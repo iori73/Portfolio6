@@ -69,7 +69,7 @@ export default function Header() {
   const headerStyle = {
     // isMobile ? 'sp' : 'pc' 今広がる仕様になっている
     scale: stickySocial ? "1" : "1",
-    padding: stickySocial ? isMobile ? "1rem 0" : ".8rem 0" : isMobile ? "1.5rem 0" : "1.5rem 0",
+    padding: stickySocial ? isMobile ? "1rem 0" : ".8rem 0" : isMobile ? "1rem 0" : "1.5rem 0",
   };
 
   const socialStyle = {

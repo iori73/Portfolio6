@@ -33,16 +33,17 @@ function Bio({ isJapanese }) {
               isJapanese ? "display-none" : ""
             }`}
           >
-            I started studying programming on my own in July 2022. This was the
-            beginning of my interest in IT. I want to contribute to creating
-            services that people benefit in a global working environment.
+            I started learning programming on my own in July 2022 to acquire
+            practical skills. My interest in IT grew from this experience. I
+            have also become strongly attracted to the possibilities of design
+            through my daily studies.
           </p>
           <p
             className={`bio-text toggleBox-jp ${
               isJapanese ? "" : "display-none"
             }`}
           >
-            2022年7月から独学でプログラミングの勉強を始めました。これをきっかけにITに興味を持ち始めました。私はグローバルな環境で、人々に利益を届けるサービスづくりに貢献したいと考えています。
+            実践的なスキルを身につけるため、2022年7月からプログラミング学習を独学で始めました。ITに対する興味はこの経験から芽生えました。日々の学びを通じて、デザインの可能性にも目を向けるようになりデザインの可能性に強く惹かれるようになりました。{" "}
           </p>
         </motion.div>
 
@@ -58,17 +59,16 @@ function Bio({ isJapanese }) {
               isJapanese ? "display-none" : ""
             }`}
           >
-            I have a strong interest in English and different cultures, and a
-            desire to collaborate with people from diverse backgrounds. In the
-            future, I aim to work overseas while quickly adapting to
-            technological advancements.
+            I have come to think deeply about how design responds to people's
+            needs and influences society. I want to have a new perspective and
+            work to have a positive impact on society.
           </div>
           <div
             className={`bio-text toggleBox-jp ${
               isJapanese ? "" : "display-none"
             }`}
           >
-            私には英語や異文化に対する強い興味と、バックグラウンドが違う人とコラボレーションしたいという思いがあります。将来的には技術の進歩に素早く適応しながら、海外で働くことを目標としています。{" "}
+            デザインがどのように人々のニーズに応え、社会に影響を与えるかについて深く考えるようになりました。私は新しい視点を持ち、社会にポジティブな影響を与えることに取り組みたいと考えています。
           </div>
         </motion.div>
       </div>

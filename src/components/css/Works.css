@@ -125,7 +125,7 @@
 }
 
 .work-title {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: left;
   gap: 2rem;
@@ -136,6 +136,10 @@
   font-size: 3rem;
   margin: 0;
 }
+
+/* .ai-job-hunt.toggleBox-jp, .ai-job-hunt.toggleBox-en {
+  font-size: 2.5rem;
+} */
 
 .work-text-sent {
   width: 100%;

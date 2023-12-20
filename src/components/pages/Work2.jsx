@@ -1,3 +1,5 @@
+import "../css/Work2.css";
+
 function Work2() {
   return (
     <div>

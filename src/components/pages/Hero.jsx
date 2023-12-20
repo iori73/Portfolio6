@@ -299,6 +299,22 @@ function Hero() {
                 <p className="hero__uiux-emoji">🧑🏼‍🎨</p>
                 <h2 className={`hero__uiux-text`}>UI / UX</h2>
               </motion.div>
+
+
+              {/* <motion.p
+                initial={{ opacity: 0, y: "1vh" }}
+                animate={inViewAnd ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+                transition={{
+                  ease: [0.2, 0, 0.6, 1],
+                  duration: 1,
+                  delay: 3.5,
+                  bounce: 0.3,
+                }}
+                className="hero__message"
+                ref={refAnd}
+              >
+                and
+              </motion.p> */}
             </div>
           </div>
         </div>

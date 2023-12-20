@@ -1,8 +1,14 @@
+  import "../css/Work1.css";
+
 function Work1() {
     return (
       <div>
-        <p>Work1</p>
+        
         <img src="icons/designer&frontend.svg" alt="designer&frontend" />
+        <video src="AI-job-hunt/LP.mov" infinite autoPlay muted></video>  
+          
+
+
       </div>
     )
   }

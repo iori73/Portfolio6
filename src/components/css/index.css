@@ -97,7 +97,7 @@ p {
 /* TRANSLATE */
 
 #translate {
-  z-index: 99;
+  z-index: 9999;
   position: fixed;
   border: none;
   background-color: transparent;
@@ -317,7 +317,7 @@ p {
 .hero__message {
   width: 100%;
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .hero__title {
@@ -365,8 +365,8 @@ p {
 }
 
 .hero__frontend-text {
-  font-family: 'Fira Code', monospace;
-  font-weight: 500;
+  /* font-family: 'Fira Code', monospace;
+  font-weight: 500; */
 
 }
 
@@ -651,6 +651,14 @@ p {
   transition: all 0.3s ease;
 }
 
+.note-button-container.toggleBox-en .view-more-container p {
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* .note-button-container.toggleBox-en .view-more-container p:hover {
+  color: #fff;
+} */
 
 
 .view-more-container .arrow-container {
@@ -682,7 +690,7 @@ p {
 }
 
 
-.view-more-container:hover .arrow-path, .view-more-container:hover .view-more-container-p {
+.view-more-container:hover .arrow-path, .view-more-container:hover .view-more-container-p, .view-more-container:hover .note-button-container.toggleBox-en > .view-more-container p {
   fill: #fff;
   color: #fff;
 }
@@ -876,18 +884,19 @@ p {
 
   .hero__name {
     font-size: 3.5rem;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .hero__message-container {
     padding-left: 0;
   }
   .hero__message {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
   }
 
   .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .hero__title .hero__message {
@@ -895,7 +904,7 @@ p {
   }
 
   .hero__frontend-emoji, .hero__uiux-emoji {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .hero__uiux,
@@ -904,7 +913,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
   }
 
   /* .hero .girl-img {

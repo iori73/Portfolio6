@@ -6,7 +6,7 @@ import StarBackground from "./StarBackground";
 import Parallax from "./XParallax";
 import { motion } from "framer-motion";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Image = ({}) => (
   <motion.img
@@ -41,8 +41,7 @@ const Works = ({ isJapanese }) => {
 
   return (
     <section className="works section">
-      {/* <Link to="/work1">Work1</Link>
-      <Link to="/work2">Work2</Link> */}
+
 
       <h2>Works</h2>
 
@@ -101,7 +100,7 @@ const Works = ({ isJapanese }) => {
             </div>
 
             <div className="work-title">
-              <Link to="/work1">
+              {/* <Link to="/work1"> */}
                 {" "}
                 <h3
                   className={`ai-job-hunt toggleBox-jp ${
@@ -110,8 +109,8 @@ const Works = ({ isJapanese }) => {
                 >
                   {WorksData[0].titleJP}
                 </h3>
-              </Link>
-              <Link to="/work1">
+              {/* </Link> */}
+              {/* <Link to="/work1"> */}
                 {" "}
                 <h3
                   className={`ai-job-hunt toggleBox-en ${
@@ -120,7 +119,7 @@ const Works = ({ isJapanese }) => {
                 >
                   {WorksData[0].titleEN}
                 </h3>
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
 
@@ -132,7 +131,7 @@ const Works = ({ isJapanese }) => {
               {WorksData[0].descEN}
             </p>
 
-            <Link to="/work1">
+            {/* <Link to="/work1"> */}
               <svg
                 className="arrow-container arrow-adjust"
                 width="70"
@@ -161,7 +160,7 @@ const Works = ({ isJapanese }) => {
                   fill="#065D44"
                 />
               </svg>
-            </Link>
+            {/* </Link> */}
           </div>
         </div>
       </div>
@@ -221,7 +220,7 @@ const Works = ({ isJapanese }) => {
             </div>
 
             <div className="work-title">
-              <Link to="/work2">
+              {/* <Link to="/work2"> */}
                 {" "}
                 <h3
                   className={` toggleBox-jp ${
@@ -230,8 +229,8 @@ const Works = ({ isJapanese }) => {
                 >
                   {WorksData[1].titleJP}
                 </h3>
-              </Link>
-              <Link to="/work2">
+              {/* </Link> */}
+              {/* <Link to="/work2"> */}
                 {" "}
                 <h3
                   className={` toggleBox-en ${
@@ -240,7 +239,7 @@ const Works = ({ isJapanese }) => {
                 >
                   {WorksData[1].titleEN}
                 </h3>
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
 
@@ -260,7 +259,7 @@ const Works = ({ isJapanese }) => {
               {WorksData[1].descJP}
             </p>
 
-            <Link to="/work2">
+            {/* <Link to="/work2"> */}
               <svg
                 className="arrow-container"
                 width="70"
@@ -289,7 +288,7 @@ const Works = ({ isJapanese }) => {
                   fill="#065D44"
                 />
               </svg>
-            </Link>
+            {/* </Link> */}
           </div>
         </div>
       </div>

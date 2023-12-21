@@ -533,7 +533,7 @@ p {
 .article img {
   max-width: 100%;
   transform: translateY(2rem);
-  border-radius: 40px 40px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .article-text {
@@ -544,7 +544,7 @@ p {
   gap: 1rem;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.99);
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 20px 20px;
 }
 
 .article-date {

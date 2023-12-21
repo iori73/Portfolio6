@@ -386,7 +386,7 @@ p {
   /* padding: 6rem 0; */
   gap: 2rem;
   position: relative;
-  margin: 20rem auto;
+  margin: 20rem auto 0;
 }
 
 .svgator1 {

@@ -5,7 +5,7 @@ function Work1() {
       <div>
         
         <img src="icons/designer&frontend.svg" alt="designer&frontend" />
-        <video src="AI-job-hunt/LP.mov" infinite autoPlay muted></video>  
+        <video src="AI-job-hunt/LP.mp4" infinite autoPlay muted></video>  
           
 
 

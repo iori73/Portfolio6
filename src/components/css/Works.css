@@ -179,9 +179,21 @@
   transition: all 0.3s ease;
 }
 
-.arrow-adjust {
-  transform: translate(0%, -40%);
+.arrow-text-container {
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-end;
 }
+
+.arrow-text-container > p > small {
+  font-size: .8rem;
+  opacity: .8;
+}
+
+/* .arrow-adjust {
+  transform: translate(0%, -40%);
+} */
 
 .arrow-rect {
   transition: all 0.3s ease;

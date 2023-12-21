@@ -386,6 +386,7 @@ p {
   /* padding: 6rem 0; */
   gap: 2rem;
   position: relative;
+  margin: 20rem auto;
 }
 
 .svgator1 {
@@ -929,7 +930,9 @@ p {
   }
 
   /* BIO */
-  .bio.section {
+  .bio {
+    margin: 0rem auto;
+
   }
 
   .bio-text-container {

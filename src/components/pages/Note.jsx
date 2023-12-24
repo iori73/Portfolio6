@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import './css/Global.css';
 
 const Note = ({ isJapanese }) => {
   const [articles, setArticles] = useState([]);
@@ -35,32 +34,6 @@ const Note = ({ isJapanese }) => {
     return new Date(dateString).toLocaleDateString("ja-JP", options);
   }
 
-  // 翻訳APIを使ってテキストを翻訳する
-  async function translateText(text, sourceLang, targetLang) {
-    const url = "https://libretranslate.com/translate";
-
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          q: text,
-          source: sourceLang,
-          target: targetLang,
-          format: "text",
-        }),
-      });
-
-      const result = await response.json();
-      return result.translatedText;
-    } catch (error) {
-      console.error("Translation error:", error);
-      return text;
-    }
-  }
 
   const Article = ({ title, link, description, thumbnail, pubDate }) => {
     const handleArticleClick = () => {
@@ -82,45 +55,12 @@ const Note = ({ isJapanese }) => {
     );
   };
 
-  // tryしてみたけど、エラーが出てしまう
-  // const Article = ({ title, description, thumbnail, pubDate, link, isJapanese }) => {
-  //   const [translatedTitle, setTranslatedTitle] = useState('');
-  //   const [translatedDescription, setTranslatedDescription] = useState('');
 
-  //   useEffect(() => {
-  //     if (!isJapanese) {
-  //       translateText(title, 'ja', 'en').then(setTranslatedTitle);
-  //       translateText(description, 'ja', 'en').then(setTranslatedDescription);
-  //     }
-  //   }, [title, description, isJapanese]);
-
-  //   const handleArticleClick = () => {
-  //     window.open(link, '_blank');
-  //   };
-
-  //   return (
-  //     <div className="article" onClick={handleArticleClick}>
-  //       <img src={thumbnail} alt={title} />
-  //       <div className="article-text">
-  //         <p className='article-date'>{formatDate(pubDate)}</p>
-  //         <h3 className='article-title'>{isJapanese ? title : translatedTitle}</h3>
-  //         <div dangerouslySetInnerHTML={{ __html: isJapanese ? description : translatedDescription }} className="article-desc" />
-  //       </div>
-  //     </div>
-  //   );
-  // };
 
   return (
-    <div className="note section">
-      <div className="note-container">
+    <section className="note section">
+      <div className="note__container">
         <h2>note</h2>
-        {/* <div className={`note-heading toggleBox-en ${isJapanese ? 'display-none' : ''} `}>
-          <img src="icons/square2.png" alt="note square" />
-        </div>
-
-        <div className={`note-heading  toggleBox-jp ${isJapanese ? '' : 'display-none'} `}>
-          <img src="icons/square2.png" alt="note square" />
-        </div> */}
 
         <div className="articles-container">
           {articles.map((article, index) => (
@@ -131,17 +71,17 @@ const Note = ({ isJapanese }) => {
 
 
         <div
-          className={`note-button-container toggleBox-jp ${
-            isJapanese ? "" : "display-none"
+          className={`note__button-container toggleBox-jp ${
+            isJapanese ? "" : "hidden"
           }`}
         >
-          <div className="note-profile-container">
+          <div className="note__profile-container">
           <img
-            className="note-profile-img"
+            className="note__profile-img"
             src="note-profile.png"
             alt="note profile"
           />
-          <p>
+          <p className="note__profile-p">
             イオリ <br />
             大学3年生。独学で英語でプログラミングとデザインの勉強中。
           </p>
@@ -188,17 +128,17 @@ const Note = ({ isJapanese }) => {
 
 
         <div
-          className={` note-button-container toggleBox-en ${
-            isJapanese ? "display-none" : ""
-          } `}
+          className={`note__button-container toggleBox-en ${
+            isJapanese ? "hidden" : " "
+          }`}
         >
-          <div className="note-profile-container">
+          <div className="note__profile-container">
           <img
-            className="note-profile-img"
+            className="note__profile-img"
             src="note-profile.png"
             alt="note profile"
           />
-          <p>
+          <p className="note__profile-p">
             Iori <br />
             A sophomore. I'm studying programming and design in Japanese and English by myself.
           </p>
@@ -212,7 +152,7 @@ const Note = ({ isJapanese }) => {
           }
 
           >
-          <p>view more</p>
+          <p className="view-more-container-p">view more</p>
           <svg
               className="arrow-container"
               width="100"
@@ -244,7 +184,7 @@ const Note = ({ isJapanese }) => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

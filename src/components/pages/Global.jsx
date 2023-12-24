@@ -1,15 +1,10 @@
 import { useEffect, useRef } from 'react';
-import '../css/Global.css';
 
 function Global({ isJapanese, setLanguage }) {
-  // const loaderRef = useRef(null);
   const cursorRef = useRef(null);
   const stalkerRef = useRef(null);
 
   useEffect(() => {
-    // const loaderElement = loaderRef.current;
-    // loaderElement.classList.add('loaded');
-
     const cursorElement = cursorRef.current;
     const stalkerElement = stalkerRef.current;
 
@@ -45,22 +40,9 @@ function Global({ isJapanese, setLanguage }) {
       <div ref={cursorRef} id="cursor"></div>
       <div ref={stalkerRef} id="stalker"></div>
 
-      {/* <div ref={loaderRef} id="loader"> */}
-
-        {/* <div className="loading-img-container">
-          <div className='loading-waves'>
-            <div> className='loading-wave6' src="hero__images/Bali1.png" alt="wave6" />
-          </div>
-        </div> */}
-
-{/* </div> */}
-
-
       <button id="translate" onClick={handleTranslateClick}>
         EN-JP
       </button>
-
-      
     </>
   );
 }

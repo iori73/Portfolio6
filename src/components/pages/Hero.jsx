@@ -3,59 +3,92 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import StarBackground from "./StarBackground";
+import HeroParallax from "./HeroParallax";
 
 function Hero() {
-  const [refH1, inViewH1] = useInView({
-    rootMargin: "50px",
-    triggerOnce: true,
-  });
 
-  const [refFront, inViewFront] = useInView({
-    rootMargin: "50px",
-    triggerOnce: true,
-  });
-  const [refUIUX, inViewUIUX] = useInView({
-    rootMargin: "50px",
-    triggerOnce: true,
-  });
 
-  const [refMssg, inViewMssg] = useInView({
-    rootMargin: "50px",
-    triggerOnce: true,
-  });
+  // const [refH1, inViewH1] = useInView({
+  //   rootMargin: "50px",
+  //   triggerOnce: true,
+  // });
 
-  const [refAnd, inViewAnd] = useInView({
-    rootMargin: "50px",
-    triggerOnce: true,
-  });
+  // const [refFront, inViewFront] = useInView({
+  //   rootMargin: "50px",
+  //   triggerOnce: true,
+  // });
+  // const [refUIUX, inViewUIUX] = useInView({
+  //   rootMargin: "50px",
+  //   triggerOnce: true,
+  // });
 
-  // const isPhone = window.innerWidth <= 768;
+  // const [refMssg, inViewMssg] = useInView({
+  //   rootMargin: "50px",
+  //   triggerOnce: true,
+  // });
 
-  // const phoneTransition = {
-  //   duration: 2,
-  //   delay: 1.5,
-  // };
+  // const [refAnd, inViewAnd] = useInView({
+  //   rootMargin: "50px",
+  //   triggerOnce: true,
+  // });
 
-  // const pcTransition = {
-  //   duration: 1.5,
-  //   delay: 2,
-  // };
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollPosition(window.scrollY);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
+    // 一つのオブジェクトですべてのビューポート内視認性ステートを管理
+    const [inViewStates, setInViewStates] = useState({
+      h1: false,
+      front: false,
+      uiux: false,
+      mssg: false,
+      and: false,
+    });
+  
+    // useInView フックの使用
+    const [refH1, inViewH1] = useInView({ triggerOnce: true });
+    const [refFront, inViewFront] = useInView({ triggerOnce: true });
+    const [refUIUX, inViewUIUX] = useInView({ triggerOnce: true });
+    const [refMssg, inViewMssg] = useInView({ triggerOnce: true });
+    const [refAnd, inViewAnd] = useInView({ triggerOnce: true });
+  
+    // スクロールポジションの追跡
+    const [scrollPosition, setScrollPosition] = useState(0);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollPosition(window.scrollY);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    // 視認性が変わった時にステートを更新
+    useEffect(() => {
+      setInViewStates({
+        h1: inViewH1,
+        front: inViewFront,
+        uiux: inViewUIUX,
+        mssg: inViewMssg,
+        and: inViewAnd,
+      });
+    }, [inViewH1, inViewFront, inViewUIUX, inViewMssg, inViewAnd]);
+
+
+
+    
   // 背景色
-  function interpolateColor(
+  function getInterpolatedColor(
     scrollPosition,
     startRGB,
     middleRGB,
@@ -90,7 +123,7 @@ function Hero() {
   const maxScrollValue = 700;
 
   // コンポーネント内での使用例
-  const bgColor = interpolateColor(
+  const bgColor = getInterpolatedColor(
     scrollPosition,
     startColor,
     middleColor,
@@ -111,10 +144,8 @@ function Hero() {
   });
 
   function handleImageLoaded(imgKey) {
-    console.log(`Image ${imgKey} loaded`);
     setImageLoaded((prev) => {
       const newState = { ...prev, [imgKey]: true };
-      console.log(newState);
       return newState;
     });
   }
@@ -126,14 +157,12 @@ function Hero() {
 
   return (
     <section className="hero">
-      <StarBackground />
-
-      {/* ⭕️ */}
+      <HeroParallax />
       <div className="hero__bg-img-container">
-        <div className="row1">
+        <div className="upper-row">
           {!imageLoaded.img1 && <Skeleton height={256} width={332} />}
           <img
-            className={`img-high-scool1 ${!imageLoaded.img1 ? "skeleton" : ""}`}
+            className={`img-class-photo ${!imageLoaded.img1 ? "skeleton" : ""}`}
             src="hero__images/High-school1.png"
             alt="image of class group photo of high school graduation ceremony"
             onLoad={() => handleImageLoaded("img1")}
@@ -148,25 +177,25 @@ function Hero() {
 
           {!imageLoaded.img3 && <Skeleton height={200} width={300} />}
           <img
-            className="img-aus1"
+            className="img-gc-gate"
             src="hero__images/Aus1.png"
-            alt="Under a gate in Gold Coast"
+            alt="Me being under a gate in Gold Coast"
             onLoad={() => handleImageLoaded("img3")}
           />
 
           {!imageLoaded.img4 && <Skeleton height={200} width={300} />}
           <img
-            className="img-aus3"
+            className="img-waterfall"
             src="hero__images/Aus3.png"
             alt="In front of a waterfall in Gold Coast"
             onLoad={() => handleImageLoaded("img4")}
           />
         </div>
 
-        <div className="row2">
+        <div className="lower-row">
           {!imageLoaded.img5 && <Skeleton height={200} width={300} />}
           <img
-            className={`img-high-scool2 ${!imageLoaded.img5 ? "skeleton" : ""}`}
+            className={`img-hat-toss ${!imageLoaded.img5 ? "skeleton" : ""}`}
             src="hero__images/High-school2.png"
             alt="image of me and my friends throwing graduate caps"
             onLoad={() => handleImageLoaded("img5")}
@@ -189,7 +218,7 @@ function Hero() {
 
           {!imageLoaded.img8 && <Skeleton height={200} width={300} />}
           <img
-            className="img-aus2"
+            className="img-hill"
             src="hero__images/Aus2.png"
             alt="Walking on meadow hill in Gold Coast"
             onLoad={() => handleImageLoaded("img8")}
@@ -197,27 +226,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* ❌ */}
-      {/* <div className="hero__bg-img-container">
-        <div className="row1">
-          {!imageLoaded.img1 ? (
-            <Skeleton
-              style={{ backgroundColor: "Gray" }}
-              height={256}
-              width={332}
-            />
-          ) : (
-            <img
-              className="img-high-scool1"
-              src="hero__images/High-school1.png"
-              alt="High school graduation"
-              onLoad={() => console.log('Image loaded')}
-              onError={() => console.log('Image failed to load')}
-            />
-          )}
-        </div>
-        row2も同様に処理
-      </div> */}
+
 
       {allImagesLoaded && (
         <div className="hero__container">
@@ -243,7 +252,7 @@ function Hero() {
               transition={{
                 ease: [0.2, 0, 0.6, 1],
                 duration: 2,
-                delay: 2, // 遅延時間の調整
+                delay: 2, 
                 bounce: 0.3,
               }}
               className={`hero__message ${inViewMssg ? "true" : "false"}`}
@@ -275,7 +284,7 @@ function Hero() {
                 transition={{
                   ease: [0.2, 0, 0.6, 1],
                   duration: 1,
-                  delay: 3.5, // 遅延時間の調整
+                  delay: 3.5, 
                   bounce: 0.3,
                 }}
                 className="hero__message"
@@ -300,21 +309,6 @@ function Hero() {
                 <h2 className={`hero__uiux-text`}>UI / UX</h2>
               </motion.div>
 
-
-              {/* <motion.p
-                initial={{ opacity: 0, y: "1vh" }}
-                animate={inViewAnd ? { y: "0vw", opacity: 1, scale: 1 } : {}}
-                transition={{
-                  ease: [0.2, 0, 0.6, 1],
-                  duration: 1,
-                  delay: 3.5,
-                  bounce: 0.3,
-                }}
-                className="hero__message"
-                ref={refAnd}
-              >
-                and
-              </motion.p> */}
             </div>
           </div>
         </div>

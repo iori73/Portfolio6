@@ -22,7 +22,7 @@ const StarLayer = ({ count, size, color, speed }) => {
   const [shadows, setShadows] = useState("");
 
   const spring = useSpring(yPos, {
-    stiffness: 100, // スターの動きの硬さ
+    stiffness: 10, // スターの動きの硬さ
     damping: 1, // スターの動きの減衰率
   });
 
@@ -34,6 +34,9 @@ const StarLayer = ({ count, size, color, speed }) => {
   useEffect(() => {
     const handleScroll = () => {
       setYPos(window.scrollY * speed);
+
+      // const newPosition = window.scrollY * window.scrollY * speed; // 二乗を使う
+      // setYPos(newPosition);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -61,14 +64,15 @@ const StarBackground = () => {
     <div className="star-background"> 
       <StarLayer
         count={100}
-        size="0.5rem"
+        size="0.8rem"
         color="rgba(252, 255, 230, 0.3)"
         speed={.4}
         filter="blur(1px)"
       />
+      
       <StarLayer
         count={25}
-        size="0.3rem"
+        size="0.5rem"
         color="#FFB966"
         speed={.1}
       />

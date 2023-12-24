@@ -1,4 +1,4 @@
-  import "../css/Work1.css";
+  import "../../css/Work1.css";
 
 function Work1() {
     return (

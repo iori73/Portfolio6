@@ -33,6 +33,10 @@
   background-blend-mode: overlay;
 }
 
+.worrk__work.money-forest {
+  flex-direction: row-reverse;
+}
+
 .works__work .paramotion {
   opacity: 1;
 }
@@ -334,5 +338,32 @@
   .arrow-adjust {
     transform: translate(0%, 0%);
 }
+
+}
+
+
+/* 日英翻訳toggle */
+.dn-in-pc {
+  display: none;
+  width: 10%;
+}
+
+.dn-in-sp {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .dn-in-pc {
+    display: block;
+    width: 10%;
+  }
+
+  .dn-in-sp {
+    display: none;
+  }
 
 }

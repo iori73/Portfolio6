@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 import Work from './Work';
 
+
 const Works = ({ isJapanese }) => (
   <section className="works section">
     <h2>Works</h2>

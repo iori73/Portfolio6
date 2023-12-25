@@ -426,7 +426,9 @@ p {
   backdrop-filter: blur(0);
   background-blend-mode: overlay;
   padding: 0;
-  border-radius: 0px;
+  border-radius: 0pxnpm run dev
+
+  ;
   width: fit-content;
 }
 
@@ -487,7 +489,7 @@ p {
   /* padding: 6rem 0; */
   gap: 2rem;
   position: relative;
-  margin: 10rem auto 0;
+  margin: 10rem auto;
 }
 
 

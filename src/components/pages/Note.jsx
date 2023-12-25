@@ -189,3 +189,5 @@ const Note = ({ isJapanese }) => {
 };
 
 export default Note;
+
+

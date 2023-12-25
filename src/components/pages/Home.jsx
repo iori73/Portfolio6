@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Header, Hero, Bio, Works, Footer, Note } from "../../index";
+import { Header, Hero, Bio, Works, Footer, Note, Monex } from "../../index";
 
 function Home({ isJapanese }) {
   const [scrollY, setScrollY] = useState(0);
@@ -62,23 +62,26 @@ function Home({ isJapanese }) {
 
 
 
+
+
   return (
     <main className="home">
       <Header />
       <Hero />
-      <motion.img
+      {/* <motion.img
         className="global__img-profile"
         src="profile-min.jpg"
         alt="image of me"
         style={profileStyle}
         animate={profileAnimation}
         transition={{ duration: 0.6, type: "ease-in-out" }}
-      />
+      /> */}
 
       <Bio isJapanese={isJapanese} />
       <Works isJapanese={isJapanese} />
       <Note isJapanese={isJapanese} />
       <Footer />
+      {/* <Monex /> */}
     </main>
   );
 }

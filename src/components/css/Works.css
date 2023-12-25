@@ -193,9 +193,6 @@
   opacity: .8;
 }
 
-/* .arrow-adjust {
-  transform: translate(0%, -40%);
-} */
 
 .arrow-rect {
   transition: all 0.3s ease;

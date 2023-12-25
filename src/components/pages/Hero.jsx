@@ -45,48 +45,48 @@ function Hero() {
   //   };
   // }, []);
 
-    // 一つのオブジェクトですべてのビューポート内視認性ステートを管理
-    const [inViewStates, setInViewStates] = useState({
-      h1: false,
-      front: false,
-      uiux: false,
-      mssg: false,
-      and: false,
+  // 一つのオブジェクトですべてのビューポート内視認性ステートを管理
+  const [inViewStates, setInViewStates] = useState({
+    h1: false,
+    front: false,
+    uiux: false,
+    mssg: false,
+    and: false,
+  });
+
+  // useInView フックの使用
+  const [refH1, inViewH1] = useInView({ triggerOnce: true });
+  const [refFront, inViewFront] = useInView({ triggerOnce: true });
+  const [refUIUX, inViewUIUX] = useInView({ triggerOnce: true });
+  const [refMssg, inViewMssg] = useInView({ triggerOnce: true });
+  const [refAnd, inViewAnd] = useInView({ triggerOnce: true });
+
+  // スクロールポジションの追跡
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // 視認性が変わった時にステートを更新
+  useEffect(() => {
+    setInViewStates({
+      h1: inViewH1,
+      front: inViewFront,
+      uiux: inViewUIUX,
+      mssg: inViewMssg,
+      and: inViewAnd,
     });
-  
-    // useInView フックの使用
-    const [refH1, inViewH1] = useInView({ triggerOnce: true });
-    const [refFront, inViewFront] = useInView({ triggerOnce: true });
-    const [refUIUX, inViewUIUX] = useInView({ triggerOnce: true });
-    const [refMssg, inViewMssg] = useInView({ triggerOnce: true });
-    const [refAnd, inViewAnd] = useInView({ triggerOnce: true });
-  
-    // スクロールポジションの追跡
-    const [scrollPosition, setScrollPosition] = useState(0);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        setScrollPosition(window.scrollY);
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-  
-    // 視認性が変わった時にステートを更新
-    useEffect(() => {
-      setInViewStates({
-        h1: inViewH1,
-        front: inViewFront,
-        uiux: inViewUIUX,
-        mssg: inViewMssg,
-        and: inViewAnd,
-      });
-    }, [inViewH1, inViewFront, inViewUIUX, inViewMssg, inViewAnd]);
+  }, [inViewH1, inViewFront, inViewUIUX, inViewMssg, inViewAnd]);
 
 
 
-    
+
   // 背景色
   function getInterpolatedColor(
     scrollPosition,
@@ -151,15 +151,57 @@ function Hero() {
   }
 
   // すべての画像がロードされたかどうかを判断するための関数
-  const allImagesLoaded = Object.values(imageLoaded).every(
-    (status) => status === true
-  );
+  // const allImagesLoaded = Object.values(imageLoaded).every(
+  //   (status) => status === true
+  // );
+
+  // Define the sliding animation
+  // const slideAnimation = {
+  //   initial: { x: '0%' }, // Start offscreen to the right
+  //   animate: { x: ['0%', '-100%', '0%'], transition: { repeat: Infinity, duration: 20, ease: "linear" } }, // Slide to the left
+  // };
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+
+
+  // seamless loop
+  const slideAnimation = {
+    initial: { x: '0%' },
+    animate: {
+      x: isMobile ? ['0%', '-180%'] : ['0%', '-108%'],
+      transition: { repeat: Infinity, duration: 60, ease: "linear" }
+    }
+  };
+
+  // const imageArray = [
+  //   "hero__images/High-school1.png",
+  //   "hero__images/Aus3.png",
+  //   "hero__images/Aus1.png",
+  //   "hero__images/Bali1.png",
+  //   "hero__images/High-school2.png",
+  //   "hero__images/High-school1.png" // Duplicate of the first image for seamless looping
+  // ];
+
+
+
 
   return (
     <section className="hero">
       <HeroParallax />
       <div className="hero__bg-img-container">
-        <div className="upper-row">
+
+        <motion.div className="upper-row image-slider-container" variants={slideAnimation} initial="initial" animate="animate">
+
           {!imageLoaded.img1 && <Skeleton height={256} width={332} />}
           <img
             className={`img-class-photo ${!imageLoaded.img1 ? "skeleton" : ""}`}
@@ -167,12 +209,14 @@ function Hero() {
             alt="image of class group photo of high school graduation ceremony"
             onLoad={() => handleImageLoaded("img1")}
           />
-          {!imageLoaded.img2 && <Skeleton height={200} width={300} />}
+
+
+          {!imageLoaded.img4 && <Skeleton height={200} width={300} />}
           <img
-            className="img-ig"
-            src="hero__images/IG-profile.png"
-            alt="IG profile"
-            onLoad={() => handleImageLoaded("img2")}
+            className="img-waterfall"
+            src="hero__images/Aus3.png"
+            alt="In front of a waterfall in Gold Coast"
+            onLoad={() => handleImageLoaded("img4")}
           />
 
           {!imageLoaded.img3 && <Skeleton height={200} width={300} />}
@@ -183,31 +227,6 @@ function Hero() {
             onLoad={() => handleImageLoaded("img3")}
           />
 
-          {!imageLoaded.img4 && <Skeleton height={200} width={300} />}
-          <img
-            className="img-waterfall"
-            src="hero__images/Aus3.png"
-            alt="In front of a waterfall in Gold Coast"
-            onLoad={() => handleImageLoaded("img4")}
-          />
-        </div>
-
-        <div className="lower-row">
-          {!imageLoaded.img5 && <Skeleton height={200} width={300} />}
-          <img
-            className={`img-hat-toss ${!imageLoaded.img5 ? "skeleton" : ""}`}
-            src="hero__images/High-school2.png"
-            alt="image of me and my friends throwing graduate caps"
-            onLoad={() => handleImageLoaded("img5")}
-          />
-          {!imageLoaded.img6 && <Skeleton height={200} width={300} />}
-          <img
-            className="img-profile"
-            src="profile-min.jpg"
-            alt="Profile picture"
-            onLoad={() => handleImageLoaded("img6")}
-          />
-
           {!imageLoaded.img7 && <Skeleton height={200} width={300} />}
           <img
             className="img-bali"
@@ -215,104 +234,170 @@ function Hero() {
             alt="Surfing in Bali"
             onLoad={() => handleImageLoaded("img7")}
           />
+          {!imageLoaded.img5 && <Skeleton height={200} width={300} />}
+          <img
+            className={`img-hat-toss ${!imageLoaded.img5 ? "skeleton" : ""}`}
+            src="hero__images/High-school2.png"
+            alt="image of me and my friends throwing graduate caps"
+            onLoad={() => handleImageLoaded("img5")}
+          />
 
-          {!imageLoaded.img8 && <Skeleton height={200} width={300} />}
+          {!imageLoaded.img2 && <Skeleton height={200} width={300} />}
+          <img
+            className="img-ig"
+            src="hero__images/IG-profile.png"
+            alt="IG profile"
+            onLoad={() => handleImageLoaded("img2")}
+          />
+          {/*  */}
+          {!imageLoaded.img1 && <Skeleton height={256} width={332} />}
+          <img
+            className={`img-class-photo adjust ${!imageLoaded.img1 ? "skeleton" : ""}`}
+            src="hero__images/High-school1.png"
+            alt="image of class group photo of high school graduation ceremony"
+            onLoad={() => handleImageLoaded("img1")}
+          />
+
+          {!imageLoaded.img4 && <Skeleton height={200} width={300} />}
+          <img
+            className="img-waterfall adjust"
+            src="hero__images/Aus3.png"
+            alt="In front of a waterfall in Gold Coast"
+            onLoad={() => handleImageLoaded("img4")}
+          />
+          {!imageLoaded.img3 && <Skeleton height={200} width={300} />}
+          <img
+            className="img-gc-gate adjust"
+            src="hero__images/Aus1.png"
+            alt="Me being under a gate in Gold Coast"
+            onLoad={() => handleImageLoaded("img3")}
+          />
+
+          {!imageLoaded.img7 && <Skeleton height={200} width={300} />}
+          <img
+            className="img-bali adjust"
+            src="hero__images/Bali1.png"
+            alt="Surfing in Bali"
+            onLoad={() => handleImageLoaded("img7")}
+          />
+
+
+          {/* {!imageLoaded.img8 && <Skeleton height={200} width={300} />}
           <img
             className="img-hill"
             src="hero__images/Aus2.png"
             alt="Walking on meadow hill in Gold Coast"
             onLoad={() => handleImageLoaded("img8")}
+          /> */}
+
+
+
+        </motion.div>
+
+
+
+        {/* 
+        <div className="lower-row">
+
+          {!imageLoaded.img6 && <Skeleton height={200} width={300} />}
+          <img
+            className="img-profile"
+            src="profile-min.jpg"
+            alt="Profile picture"
+            onLoad={() => handleImageLoaded("img6")}
           />
-        </div>
+          </div> 
+          */}
+
       </div>
 
 
 
-      {allImagesLoaded && (
-        <div className="hero__container">
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={inViewH1 ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+      {/* {allImagesLoaded && ( */}
+      <div className="hero__container">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inViewH1 ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+          transition={{
+            ease: [0.2, 0, 0.6, 1],
+            duration: 2,
+            delay: 1,
+            bounce: 0.3,
+          }}
+          className={`hero__name  ${inViewH1 ? "true" : "false"}`}
+          ref={refH1}
+        >
+          Hi, I'm Iori !
+        </motion.h1>
+
+        <div className="hero__message-container">
+          <motion.p
+            initial={{ opacity: 0, y: "2vh" }}
+            animate={inViewMssg ? { y: "0vw", opacity: 1, scale: 1 } : {}}
             transition={{
               ease: [0.2, 0, 0.6, 1],
               duration: 2,
-              delay: 1,
+              delay: 2,
               bounce: 0.3,
             }}
-            className={`hero__name  ${inViewH1 ? "true" : "false"}`}
-            ref={refH1}
+            className={`hero__message ${inViewMssg ? "true" : "false"}`}
+            ref={refMssg}
           >
-            Hi, I'm Iori !
-          </motion.h1>
+            I'm a self-taught learner of{" "}
+          </motion.p>
 
-          <div className="hero__message-container">
-            <motion.p
-              initial={{ opacity: 0, y: "2vh" }}
-              animate={inViewMssg ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+          <div className={`hero__title`}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={inViewFront ? { y: "0vw", opacity: 1, scale: 1 } : {}}
               transition={{
                 ease: [0.2, 0, 0.6, 1],
-                duration: 2,
-                delay: 2, 
+                duration: 1,
+                delay: 3,
                 bounce: 0.3,
               }}
-              className={`hero__message ${inViewMssg ? "true" : "false"}`}
-              ref={refMssg}
+              className={`hero__frontend  ${inViewFront ? "true" : "false"}`}
+              ref={refFront}
             >
-              I'm a self-taught learner of{" "}
+              <p className="hero__frontend-emoji">👩‍💻</p>
+              <h2 className={`hero__frontend-text `}>Frontend</h2>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: "1vh" }}
+              animate={inViewAnd ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+              transition={{
+                ease: [0.2, 0, 0.6, 1],
+                duration: 1,
+                delay: 3.5,
+                bounce: 0.3,
+              }}
+              className="hero__message"
+              ref={refAnd}
+            >
+              and
             </motion.p>
 
-            <div className={`hero__title`}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={inViewFront ? { y: "0vw", opacity: 1, scale: 1 } : {}}
-                transition={{
-                  ease: [0.2, 0, 0.6, 1],
-                  duration: 1,
-                  delay: 3,
-                  bounce: 0.3,
-                }}
-                className={`hero__frontend  ${inViewFront ? "true" : "false"}`}
-                ref={refFront}
-              >
-                <p className="hero__frontend-emoji">👩‍💻</p>
-                <h2 className={`hero__frontend-text `}>Frontend</h2>
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={inViewUIUX ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+              transition={{
+                ease: [0.2, 0, 0.6, 1],
+                duration: 1,
+                delay: 4,
+                bounce: 0.3,
+              }}
+              className={`hero__uiux  ${inViewUIUX ? "true" : "false"}`}
+              ref={refUIUX}
+            >
+              <p className="hero__uiux-emoji">🧑🏼‍🎨</p>
+              <h2 className={`hero__uiux-text`}>UI / UX</h2>
+            </motion.div>
 
-              <motion.p
-                initial={{ opacity: 0, y: "1vh" }}
-                animate={inViewAnd ? { y: "0vw", opacity: 1, scale: 1 } : {}}
-                transition={{
-                  ease: [0.2, 0, 0.6, 1],
-                  duration: 1,
-                  delay: 3.5, 
-                  bounce: 0.3,
-                }}
-                className="hero__message"
-                ref={refAnd}
-              >
-                and
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={inViewUIUX ? { y: "0vw", opacity: 1, scale: 1 } : {}}
-                transition={{
-                  ease: [0.2, 0, 0.6, 1],
-                  duration: 1,
-                  delay: 4,
-                  bounce: 0.3,
-                }}
-                className={`hero__uiux  ${inViewUIUX ? "true" : "false"}`}
-                ref={refUIUX}
-              >
-                <p className="hero__uiux-emoji">🧑🏼‍🎨</p>
-                <h2 className={`hero__uiux-text`}>UI / UX</h2>
-              </motion.div>
-
-            </div>
           </div>
         </div>
-      )}
+      </div>
+
     </section>
   );
 }

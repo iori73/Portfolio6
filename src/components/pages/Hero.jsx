@@ -250,7 +250,6 @@ function Hero() {
             onLoad={() => handleImageLoaded("img2")}
           />
           {/*  */}
-          {!imageLoaded.img1 && <Skeleton height={256} width={332} />}
           <img
             className={`img-class-photo adjust ${!imageLoaded.img1 ? "skeleton" : ""}`}
             src="hero__images/High-school1.png"
@@ -258,14 +257,12 @@ function Hero() {
             onLoad={() => handleImageLoaded("img1")}
           />
 
-          {!imageLoaded.img4 && <Skeleton height={200} width={300} />}
           <img
             className="img-waterfall adjust"
             src="hero__images/Aus3.png"
             alt="In front of a waterfall in Gold Coast"
             onLoad={() => handleImageLoaded("img4")}
           />
-          {!imageLoaded.img3 && <Skeleton height={200} width={300} />}
           <img
             className="img-gc-gate adjust"
             src="hero__images/Aus1.png"
@@ -273,7 +270,6 @@ function Hero() {
             onLoad={() => handleImageLoaded("img3")}
           />
 
-          {!imageLoaded.img7 && <Skeleton height={200} width={300} />}
           <img
             className="img-bali adjust"
             src="hero__images/Bali1.png"

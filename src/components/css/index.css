@@ -899,20 +899,20 @@ p {
 
   /* 📘👩‍🎓 = header-img */
   .img-class-photo {
-    width: 45vw;
+    width: 50vw;
     height: fit-content;
-    transform: translateY(-20vh);
+    transform: translateY(-25vh);
   }
 
   .img-waterfall {
-    width: 30vw;
+    width: 35vw;
     height: fit-content;
-    transform: translate(-35vw, 10vh);
+    transform: translate(-33vw, 15vh);
   }
 
 
   .img-gc-gate {
-    width: 58vw;
+    width: 60vw;
     height: fit-content;
     transform: translate(-25vw, -26vh);
   }
@@ -932,27 +932,27 @@ p {
 
 
   .img-ig {
-    width: 42vw;
+    width: 45vw;
     height: fit-content;
-    transform: translate(-27vw, 3vh);
+    transform: translate(-30vw, 3vh);
   }
 
 
   .img-class-photo.adjust {
-    width: 45vw;
+    width: 50vw;
     height: auto;
     transform: translateY(-20vh);
-    transform: translate(-23vw, -20vh);
+    transform: translate(-23vw, -25vh);
   }
 
   .img-waterfall.adjust {
-    width: 30vw;
+    width: 35vw;
     height: fit-content;
-    transform: translate(-55vw, 10vh);
+    transform: translate(-59vw, 15vh);
   }
 
   .img-gc-gate.adjust {
-    width: 58vw;
+    width: 60vw;
     height: fit-content;
     transform: translate(-38vw, -26vh);
   }
@@ -961,7 +961,6 @@ p {
     width: 60vw;
     height: fit-content;
     transform: ttranslate(-34vw, 15vh);
-
 
   }
 
@@ -975,7 +974,7 @@ p {
   .hero__container {
     width: 80%;
     justify-content: flex-start;
-    padding: 4rem 0;
+    padding: 1rem 0;
     gap: 2rem;
     z-index: 99;
     margin: 3rem auto;
@@ -993,7 +992,7 @@ p {
   }
 
   .hero__name {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0;
   }
 
@@ -1007,7 +1006,7 @@ p {
   }
 
   .hero h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .hero__title .hero__message {
@@ -1036,8 +1035,7 @@ p {
 
   /* BIO */
   .bio {
-    margin: 0rem auto;
-    padding: 0;
+    margin: 0rem auto 15rem;
   }
 
   .bio__text-container {
@@ -1091,7 +1089,7 @@ p {
     display: flex;
     width: 80%;
     align-items: center;
-    gap: 0rem;
+    gap: 1rem;
     flex-direction: column;
   }
 
@@ -1110,6 +1108,10 @@ p {
   .note__profile-img {
     width: 15vw;
     height: 15vw;
+  }
+
+  .note__profile-p {
+    text-align: center;
   }
 
   .view-more-container {

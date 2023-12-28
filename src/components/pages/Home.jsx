@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Header, Hero, Bio, Works, Footer, Note, Monex } from "../../index";
+import { Header, Hero2, Bio, Works, Footer, Note, Monex } from "../../index";
 
 function Home({ isJapanese }) {
   const [scrollY, setScrollY] = useState(0);
@@ -67,7 +67,7 @@ function Home({ isJapanese }) {
   return (
     <main className="home">
       <Header />
-      <Hero />
+      <Hero2 />
       {/* <motion.img
         className="global__img-profile"
         src="profile-min.jpg"

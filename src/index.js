@@ -3,6 +3,7 @@ export { default as Global } from './components/pages/Global.jsx';
 export { default as Home } from './components/pages/Home.jsx';
 export { default as Header } from './components/pages/Header.jsx';
 export { default as Hero } from './components/pages/Hero.jsx';
+export { default as Hero2 } from './components/pages/Hero2.jsx';
 export { default as HeroParallax } from './components/pages/HeroParallax.jsx';
 export { default as Bio } from './components/pages/Bio.jsx';
 

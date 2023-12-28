@@ -1214,6 +1214,11 @@ p {
     height: 80%;
     transform: rotate(90deg);
     justify-content: center;
+    overflow: visible;
+  }
+
+  .frontend-codes {
+    overflow: visible;
   }
 
   .green-code3 {

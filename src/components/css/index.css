@@ -230,7 +230,7 @@ p {
   margin: 0% auto;
   align-items: flex-start;
   justify-content: center;
-  /* transform: translateY(-10vh); */
+  transform: translateY(-10vh);
   /* padding-top: 10vh; */
 
 }
@@ -366,7 +366,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 0rem;
-  margin: 10vh auto 0;
+  margin: 15vh auto 0;
   height: fit-content;
   border-radius: 3.75rem;
   z-index: 10;
@@ -496,7 +496,7 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60%;
+  height: 55%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -697,7 +697,7 @@ p {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 60%;
+  height: 55%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

@@ -18,3 +18,4 @@ export { default as Footer } from './components/pages/Footer.jsx';
 
 export { default as Monex } from './components/pages/Monex.jsx';
 
+export { default as Medium } from './components/pages/Medium.jsx';

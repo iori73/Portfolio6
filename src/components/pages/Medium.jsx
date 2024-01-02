@@ -28,25 +28,37 @@ const Medium = () => {
         const readingTime = readingTimeMatch ? readingTimeMatch[1] : null;
 
         return { ...story, imageUrl, tags, readingTime };
+        
       });
 
+      console.log(data.items); // Log the fetched items
+      console.log(modifiedStories); // Log the stories after processing
       setStories(modifiedStories);
     } catch (error) {
       console.error("Fetch error: " + error.message);
     }
   };
 
+
+
+
   useEffect(() => {
     fetchMedium();
   }, []);
 
+  // const formatDate = (dateString) => {
+  //   const date = new Date(dateString);
+  //   const now = new Date();
+  //   const diffTime = Math.abs(now - date);
+  //   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  //   return diffDays === 1 ? '1 day ago' : `${diffDays} days ago`;
+  // };
+
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    const now = new Date();
-    const diffTime = Math.abs(now - date);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    return diffDays === 1 ? '1 day ago' : `${diffDays} days ago`;
+    return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
   };
+  
 
   const truncateText = (html, maxLength) => {
     const text = html.replace(/<[^>]*>?/gm, ''); // Strip HTML tags
@@ -58,7 +70,7 @@ const Medium = () => {
     <section className='medium section'>
       <div className="medium_container">
       <h2>Medium</h2>
-      <p className='medium_I-post'>I post English articles here!</p>
+      <p className='medium_I-post'>英語で記事を投稿しています</p>
       {stories.map((story, index) => (
         <div key={index} className='medium_story-container'>
          

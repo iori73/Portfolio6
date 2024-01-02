@@ -40,9 +40,9 @@ function Global({ isJapanese, setLanguage }) {
       <div ref={cursorRef} id="cursor"></div>
       <div ref={stalkerRef} id="stalker"></div>
 
-      <button id="translate" onClick={handleTranslateClick}>
+      {/* <button id="translate" onClick={handleTranslateClick}>
         EN-JP
-      </button>
+      </button> */}
     </>
   );
 }

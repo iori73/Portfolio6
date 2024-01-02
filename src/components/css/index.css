@@ -1106,6 +1106,7 @@ p {
   width: fit-content;
   height: 100%;
   margin: 1rem auto;
+  color: #727272;
 
 }
 
@@ -1133,8 +1134,10 @@ p {
   flex-direction: row-reverse;
   gap: 2rem;
   position: relative;
-  margin: 0 auto;
-  padding: 6rem 0;
+  margin: 6rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .medium_story:hover {
@@ -1145,7 +1148,8 @@ p {
 .story-image {
   width: 30%;
   margin: 0 auto;
-  border-radius: 0;
+  /* border-radius: 20px; */
+
 }
 
 
@@ -1428,7 +1432,9 @@ p {
     padding: 6rem 0 3rem;
   }
 
-  .note__container {}
+  .note__container {
+    width: 90%;
+  }
 
   .note-heading {}
 
@@ -1499,9 +1505,12 @@ p {
   }
 
   /* MEDIUM */
+  .medium_container {
+    width: 90%;
+  }
   .medium_story {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .story-image {

@@ -54,10 +54,15 @@ const Medium = () => {
   //   return diffDays === 1 ? '1 day ago' : `${diffDays} days ago`;
   // };
 
+  // const formatDate = (dateString) => {
+  //   const date = new Date(dateString);
+  //   return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+  // };
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    return date.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
   };
+  
   
 
   const truncateText = (html, maxLength) => {

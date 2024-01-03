@@ -1192,6 +1192,11 @@ p {
 
 
 @media all and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+
   h3 {
     text-align: center;
   }
@@ -1523,6 +1528,7 @@ p {
 
 .medium h3 {
   text-align: left;
+  font-size: 1.5rem;
 }
 
 

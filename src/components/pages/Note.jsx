@@ -22,7 +22,11 @@ const Note = ({ isJapanese }) => {
         console.error(
           "There has been a problem with your fetch operation:",
           error
-        );
+        );const formatDate = (dateString) => {
+          const date = new Date(dateString);
+          return date.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+        };
+        
       }
     }
 
@@ -30,9 +34,11 @@ const Note = ({ isJapanese }) => {
   }, [isJapanese]);
 
   function formatDate(dateString) {
-    const options = { month: "long", day: "numeric" };
+    const options = { month: "long", day: "numeric", year: 'numeric' };
     return new Date(dateString).toLocaleDateString("ja-JP", options);
   }
+
+  
 
 
   const Article = ({ title, link, description, thumbnail, pubDate }) => {

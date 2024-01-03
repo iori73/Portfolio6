@@ -92,12 +92,12 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  /* gap: .5rem; */
+  gap: 1rem;
 }
 
 .work-time {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -286,8 +286,13 @@
     gap: 2rem;
   }
 
+  .work-text h3 {
+    font-size: 2.5rem;
+  }
+
   .work-time {
     width: 100%;
+    gap: 1rem;
   }
 
   .work-date {
@@ -313,7 +318,7 @@
   }
 
   .work-semi-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .work-title a.toggleBox-jp {
@@ -321,9 +326,7 @@
     padding: 0.5rem 1rem;
   }
 
-  .work-title h2 {
-    font-size: 2rem;
-  }
+  
 
   .work-text-sent {
     width: 100%;

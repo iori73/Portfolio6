@@ -1146,9 +1146,11 @@ p {
 }
 
 .story-image {
-  width: 30%;
+  width: 35%;
   margin: 0 auto;
   /* border-radius: 20px; */
+  aspect-ratio: 3/2;
+  object-fit: cover;
 
 }
 
@@ -1171,8 +1173,10 @@ p {
 
 /* Story Title */
 .medium h3 {
-  margin: 0 auto;
   font-family: "Crimson Pro", serif;
+  text-align: left;
+  width: fit-content;
+  margin: 0;
 }
 
 .story-excerpt {

@@ -81,7 +81,7 @@ const Work = ({ work, isJapanese }) => {
           <p><small className={`toggleBox-jp ${isJapanese ? "" : "hidden"
             }`}>Figmaファイルに遷移します</small></p>
           {/* <Link to="/work1"> */}
-          <a href="https://www.figma.com/file/ZLczZRACBFN1kKvsrohqSi/%E5%B0%B1%E6%B4%BBAI%E3%82%B5%E3%82%A4%E3%83%88%E3%80%80%E8%A3%BD%E4%BD%9C%E9%81%8E%E7%A8%8B%E3%80%80%E7%99%BA%E8%A1%A8%E8%B3%87%E6%96%99?type=design&node-id=18%3A840&mode=design&t=viUvf51vIk9MX8hQ-1" target="_blank">
+          <a href={`${work.url}`} target="_blank">
             <svg
               className="arrow-container"
               width="70"

@@ -11,11 +11,11 @@ export { default as Works } from './components/pages/works/Works.jsx';
 export { default as Work1 } from './components/pages/works/Work1.jsx';
 export { default as Work2 } from './components/pages/works/Work2.jsx';
 
+export { default as CreativeExploration } from './components/pages/CreativeExploration.jsx';
 export { default as Note } from './components/pages/Note.jsx';
 export { default as Footer } from './components/pages/Footer.jsx';
 
 
 
-export { default as Monex } from './components/pages/Monex.jsx';
 
 export { default as Medium } from './components/pages/Medium.jsx';

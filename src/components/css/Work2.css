@@ -1,0 +1,3622 @@
+/* Cybozuのcommonn_cssコピペ */
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url(/assets/fonts/glyphicons-halflings-regular.eot);
+    src: url(/assets/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(/assets/fonts/glyphicons-halflings-regular.woff) format("woff"), url(/assets/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
+}
+
+html.fixed .main_header {
+    transform: translate3d(0, 0, 0)
+}
+
+.footer_banner_area, footer.common_footer, footer.common_site_footer, header.common_header {
+    text-align: left
+}
+
+.footer_banner_area blockquote, .footer_banner_area code, .footer_banner_area dd, .footer_banner_area div, .footer_banner_area dl, .footer_banner_area dt, .footer_banner_area fieldset, .footer_banner_area form, .footer_banner_area h1, .footer_banner_area h2, .footer_banner_area h3, .footer_banner_area h4, .footer_banner_area h5, .footer_banner_area h6, .footer_banner_area input, .footer_banner_area legend, .footer_banner_area li, .footer_banner_area ol, .footer_banner_area p, .footer_banner_area pre, .footer_banner_area td, .footer_banner_area textarea, .footer_banner_area th, .footer_banner_area ul, footer.common_footer blockquote, footer.common_footer code, footer.common_footer dd, footer.common_footer div, footer.common_footer dl, footer.common_footer dt, footer.common_footer fieldset, footer.common_footer form, footer.common_footer h1, footer.common_footer h2, footer.common_footer h3, footer.common_footer h4, footer.common_footer h5, footer.common_footer h6, footer.common_footer input, footer.common_footer legend, footer.common_footer li, footer.common_footer ol, footer.common_footer p, footer.common_footer pre, footer.common_footer td, footer.common_footer textarea, footer.common_footer th, footer.common_footer ul, footer.common_site_footer blockquote, footer.common_site_footer code, footer.common_site_footer dd, footer.common_site_footer div, footer.common_site_footer dl, footer.common_site_footer dt, footer.common_site_footer fieldset, footer.common_site_footer form, footer.common_site_footer h1, footer.common_site_footer h2, footer.common_site_footer h3, footer.common_site_footer h4, footer.common_site_footer h5, footer.common_site_footer h6, footer.common_site_footer input, footer.common_site_footer legend, footer.common_site_footer li, footer.common_site_footer ol, footer.common_site_footer p, footer.common_site_footer pre, footer.common_site_footer td, footer.common_site_footer textarea, footer.common_site_footer th, footer.common_site_footer ul, header.common_header blockquote, header.common_header code, header.common_header dd, header.common_header div, header.common_header dl, header.common_header dt, header.common_header fieldset, header.common_header form, header.common_header h1, header.common_header h2, header.common_header h3, header.common_header h4, header.common_header h5, header.common_header h6, header.common_header input, header.common_header legend, header.common_header li, header.common_header ol, header.common_header p, header.common_header pre, header.common_header td, header.common_header textarea, header.common_header th, header.common_header ul {
+    margin: 0;
+    padding: 0
+}
+
+.footer_banner_area table, footer.common_footer table, footer.common_site_footer table, header.common_header table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.footer_banner_area fieldset, .footer_banner_area img, footer.common_footer fieldset, footer.common_footer img, footer.common_site_footer fieldset, footer.common_site_footer img, header.common_header fieldset, header.common_header img {
+    border: 0
+}
+
+.footer_banner_area address, .footer_banner_area caption, .footer_banner_area cite, .footer_banner_area code, .footer_banner_area dfn, .footer_banner_area em, .footer_banner_area strong, .footer_banner_area th, .footer_banner_area var, footer.common_footer address, footer.common_footer caption, footer.common_footer cite, footer.common_footer code, footer.common_footer dfn, footer.common_footer em, footer.common_footer strong, footer.common_footer th, footer.common_footer var, footer.common_site_footer address, footer.common_site_footer caption, footer.common_site_footer cite, footer.common_site_footer code, footer.common_site_footer dfn, footer.common_site_footer em, footer.common_site_footer strong, footer.common_site_footer th, footer.common_site_footer var, header.common_header address, header.common_header caption, header.common_header cite, header.common_header code, header.common_header dfn, header.common_header em, header.common_header strong, header.common_header th, header.common_header var {
+    font-style: normal;
+    font-weight: 400
+}
+
+.footer_banner_area ol, .footer_banner_area ul, footer.common_footer ol, footer.common_footer ul, footer.common_site_footer ol, footer.common_site_footer ul, header.common_header ol, header.common_header ul {
+    list-style: none
+}
+
+.footer_banner_area caption, .footer_banner_area th, footer.common_footer caption, footer.common_footer th, footer.common_site_footer caption, footer.common_site_footer th, header.common_header caption, header.common_header th {
+    text-align: left
+}
+
+.footer_banner_area h1, .footer_banner_area h2, .footer_banner_area h3, .footer_banner_area h4, .footer_banner_area h5, .footer_banner_area h6, footer.common_footer h1, footer.common_footer h2, footer.common_footer h3, footer.common_footer h4, footer.common_footer h5, footer.common_footer h6, footer.common_site_footer h1, footer.common_site_footer h2, footer.common_site_footer h3, footer.common_site_footer h4, footer.common_site_footer h5, footer.common_site_footer h6, header.common_header h1, header.common_header h2, header.common_header h3, header.common_header h4, header.common_header h5, header.common_header h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+.footer_banner_area q:after, .footer_banner_area q:before, footer.common_footer q:after, footer.common_footer q:before, footer.common_site_footer q:after, footer.common_site_footer q:before, header.common_header q:after, header.common_header q:before {
+    content: ""
+}
+
+.footer_banner_area abbr, .footer_banner_area acronym, footer.common_footer abbr, footer.common_footer acronym, footer.common_site_footer abbr, footer.common_site_footer acronym, header.common_header abbr, header.common_header acronym {
+    border: 0;
+    font-variant: normal
+}
+
+.footer_banner_area sup, footer.common_footer sup, footer.common_site_footer sup, header.common_header sup {
+    vertical-align: text-top
+}
+
+.footer_banner_area sub, footer.common_footer sub, footer.common_site_footer sub, header.common_header sub {
+    vertical-align: text-bottom
+}
+
+.footer_banner_area input, .footer_banner_area select, .footer_banner_area textarea, footer.common_footer input, footer.common_footer select, footer.common_footer textarea, footer.common_site_footer input, footer.common_site_footer select, footer.common_site_footer textarea, header.common_header input, header.common_header select, header.common_header textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+.footer_banner_area legend, footer.common_footer legend, footer.common_site_footer legend, header.common_header legend {
+    color: #000
+}
+
+.footer_banner_area a, footer.common_footer a, footer.common_site_footer a, header.common_header a {
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: initial
+}
+
+.footer_banner_area a:hover, footer.common_footer a:hover, footer.common_site_footer a:hover, header.common_header a:hover {
+    /*opacity: 1*/
+}
+
+.footer_banner_area img, footer.common_footer img, footer.common_site_footer img, header.common_header img {
+    vertical-align: bottom;
+    border: 0;
+    outline: 0
+}
+
+.footer_banner_area button, .footer_banner_area input, .footer_banner_area select, .footer_banner_area textarea, footer.common_footer button, footer.common_footer input, footer.common_footer select, footer.common_footer textarea, footer.common_site_footer button, footer.common_site_footer input, footer.common_site_footer select, footer.common_site_footer textarea, header.common_header button, header.common_header input, header.common_header select, header.common_header textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0
+}
+
+.footer_banner_area button::-ms-expand, .footer_banner_area input::-ms-expand, .footer_banner_area select::-ms-expand, .footer_banner_area textarea::-ms-expand, footer.common_footer button::-ms-expand, footer.common_footer input::-ms-expand, footer.common_footer select::-ms-expand, footer.common_footer textarea::-ms-expand, footer.common_site_footer button::-ms-expand, footer.common_site_footer input::-ms-expand, footer.common_site_footer select::-ms-expand, footer.common_site_footer textarea::-ms-expand, header.common_header button::-ms-expand, header.common_header input::-ms-expand, header.common_header select::-ms-expand, header.common_header textarea::-ms-expand {
+    display: none
+}
+
+.footer_banner_area *, footer.common_footer *, footer.common_site_footer *, header.common_header * {
+    outline: 0
+}
+
+.footer_banner_area :active, .footer_banner_area :hover, footer.common_footer :active, footer.common_footer :hover, footer.common_site_footer :active, footer.common_site_footer :hover, header.common_header :active, header.common_header :hover {
+    outline: 0
+}
+
+.footer_banner_area :focus, footer.common_footer :focus, footer.common_site_footer :focus, header.common_header :focus {
+    outline: solid 1px red !important
+}
+
+@media screen and (min-width:768px), print {
+    header.common_header {
+        display: block !important;
+        width: 100%;
+        min-width: 960px;
+        overflow: visible;
+        position: relative;
+        -webkit-text-size-adjust: 100%;
+        line-height: 1.5;
+        font-size: 15px
+    }
+
+    header.common_header:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    header.common_header .mf_finder_searchBox_submit span {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    header.common_header .mf_finder_searchBox_items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        padding: 0;
+        height: 22px
+    }
+
+    header.common_header .mf_finder_searchBox {
+        margin-left: 0;
+        margin-right: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 22px
+    }
+
+    header.common_header .mf_finder_searchBox input[type=text] {
+        background: #fff
+    }
+
+    header.common_header .mf_finder_searchBox_form {
+        height: 22px
+    }
+
+    header.common_header .mf_finder_searchBox_items_wrapper {
+        height: 22px
+    }
+
+    header.common_header .mf_finder_searchBox_submit {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 16px;
+        background-color: #bdbdbd;
+        border: none;
+        border-radius: 0 100px 100px 0;
+        color: #eee;
+        margin-top: 1px !important;
+        padding: 0 6px;
+        height: 20px
+    }
+
+    header.common_header .mf_finder_searchBox_submit:before {
+        font-size: 12px
+    }
+
+    header.common_header .mf_finder_searchBox_query_input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        min-height: auto;
+        height: 20px;
+        margin: 0;
+        width: 200px;
+        font-size: 12px;
+        border: none;
+        border-radius: 100px 0 0 100px;
+        margin-top: 1px !important;
+        padding: 0 10px;
+        background-color: #fff;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    header.common_header .mf_finder_searchBox_suggest_items {
+        position: absolute;
+        margin: 25px 0 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        list-style-type: none;
+        padding: 0 1px 1px;
+        border-width: 0 1px 1px;
+        border-color: silver;
+        border-style: solid;
+        z-index: 5
+    }
+
+    header.common_header .mf_finder_searchBox_suggest_items li {
+        border-top: 1px dotted silver
+    }
+
+    header.common_header .mf_finder_searchBox_suggest_items li:first-child {
+        border-top: none
+    }
+
+    header.common_header .mf_finder_searchBox_suggest_items a {
+        display: inline-block;
+        width: 100%;
+        padding: 2px;
+        text-decoration: none;
+        color: #fff
+    }
+
+    header.common_header .mf_finder_searchBox_suggest_item_cur {
+        background-color: rgba(80, 80, 80, .8)
+    }
+
+    header.common_header .sub_header {
+        width: 100%;
+        background: #e0e0e0
+    }
+
+    header.common_header .sub_header .inner {
+        margin: 0 auto;
+        width: 960px;
+        height: 30px;
+    }
+
+    header.common_header .sub_header .inner:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    header.common_header .sub_header .inner ul {
+        float: right
+    }
+
+    header.common_header .sub_header .inner ul li {
+        float: left
+    }
+
+    header.common_header .sub_header .inner ul li:first-child a:after {
+        display: none
+    }
+
+    header.common_header .sub_header .inner ul li a {
+        padding: 0 12px;
+        display: block;
+        position: relative;
+        line-height: 26px;
+        font-size: 11px;
+        color: #757575
+    }
+
+    header.common_header .sub_header .inner ul li a:hover {
+        opacity: .7
+    }
+
+    header.common_header .sub_header .inner ul li a:after {
+        content: "";
+        width: 1px;
+        height: 8px;
+        display: block;
+        background: #bdbdbd;
+        position: absolute;
+        left: 0;
+        top: 9px
+    }
+
+    header.common_header .sub_header .inner ul li.search .mf_finder_container {
+        border-radius: 11px;
+        overflow: hidden;
+        position: relative
+    }
+
+    header.common_header .sub_header .inner ul li.search .mf_finder_searchBox {
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        height: 22px
+    }
+
+    header.common_header .sub_header .inner ul li.search .mf_finder_searchBox * {
+        box-sizing: border-box
+    }
+
+    header.common_header .sub_header .inner ul li.search .mf_finder_searchBox .mf_finder_searchBox_form, header.common_header .sub_header .inner ul li.search .mf_finder_searchBox .mf_finder_searchBox_items_wrapper {
+        height: 22px
+    }
+
+    header.common_header .sub_header .inner ul li.search .mf_finder_searchBox .mf_finder_searchBox_items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        padding: 0;
+        height: 22px
+    }
+
+    header.common_header .sub_header .inner ul li.search .mf_finder_searchBox .mf_finder_searchBox_submit:before {
+        font-size: 12px
+    }
+
+    header.common_header .sub_header .inner ul li.search .mf_finder_searchBox .mf_finder_searchBox_submit span {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    header.common_header .sub_header .inner ul li.login a {
+        padding-left: 20px;
+        padding-right: 0;
+        background: url(/resource/images/common_module/pc/login.png) no-repeat 4px 50%
+    }
+
+    header.common_header .sub_header .inner ul li.login a:after {
+        display: none
+    }
+
+    header.common_header .main_header .inner {
+        width: 100%;
+        height: 70px;
+        position: relative
+    }
+
+    header.common_header .main_header .inner:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    header.common_header .main_header .inner p.logo {
+        margin-left: -480px;
+        position: absolute;
+        top: 26px;
+        left: 50%;
+        z-index: 10
+    }
+
+    header.common_header .main_header .inner p.logo a {
+        width: 111px;
+        height: 20px;
+        display: block;
+        border: none;
+        background-color: transparent;
+        background-image: url(/resource/images/common_module/pc/img_logo_kintone_head.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative
+    }
+
+    header.common_header .main_header .inner p.logo a span {
+        height: 1px;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden
+    }
+
+    header.common_header .main_header .inner nav.navigations {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9
+    }
+
+    header.common_header .main_header .inner nav.navigations p.foot_close, header.common_header .main_header .inner nav.navigations p.menu_btn {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame {
+        height: 43px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu {
+        margin: 27px auto 0 auto;
+        width: 960px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul {
+        margin-right: 122px;
+        float: right
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li {
+        float: left
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>a {
+        display: block;
+        padding: 10px 15px 12px 16px;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 0;
+        color: #424242
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>a.active {
+        background: url(/resource/images/common_module/pc/icon_nav_selected.png) no-repeat center bottom;
+        color: #fba100
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>a.active:after {
+        border-color: #ffbf00 transparent transparent !important
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: -1;
+        background: #fff59d;
+        overflow: hidden;
+        max-height: 0;
+        transform-style: preserve-3d;
+        transition-property: max-height;
+        transition-duration: .4s;
+        transition-timing-function: cubic-bezier(.645, .045, .355, 1);
+        transition-delay: 0s
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner {
+        margin: 0 auto;
+        width: 960px;
+        min-height: 320px;
+        color: #424242;
+        overflow: visible
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner dl {
+        margin: 32px 0 24px 0;
+        overflow: hidden
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner dl dt {
+        margin-right: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        float: left
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner dl dd {
+        font-size: 14px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul {
+        overflow: visible
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li {
+        margin-right: 8px;
+        margin-bottom: 14px;
+        width: 182px;
+        height: 88px;
+        float: left
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.last {
+        margin-right: 0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li a {
+        width: 182px;
+        height: 88px;
+        background: #fff;
+        display: table;
+        box-sizing: border-box;
+        position: relative
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li a span {
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        color: #424242
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li a:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: no-repeat center top;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transform-style: preserve-3d;
+        transition-property: opacity;
+        transition-duration: .2s;
+        transition-delay: 0s
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li a:hover {
+        border: 1px solid #fba100
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li a:hover span {
+        color: #fba100
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_sales a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_sales.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_service a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_service.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_purchasing a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_purchasing.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_affairs a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_affairs.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_marketing a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_marketing.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_development a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_development.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_legal a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_legal.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_system a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_system.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.jobtype_medical a:after {
+        background-image: url(/resource/images/common_module/pc/img_jobtype_medical.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_sfacrm a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_sfacrm.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_communication a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_communication.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_excel a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_excel.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_workflow a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_workflow.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_inquiry a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_inquiry.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_remortwork a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_remortwork.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_report a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_report.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_project a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_project.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_document a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_document.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_amount a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_amount.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_attendance a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_attendance.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_manhour a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_manhour.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_employment a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_employment.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_portal a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_portal.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_questionnaire a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_questionnaire.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_odering a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_odering.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.purpose_form a:after {
+        background-image: url(/resource/images/common_module/pc/img_purpose_form.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_beginners, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_why {
+        width: 468px;
+        height: 120px;
+        display: block
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_beginners a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_why a {
+        padding-top: 76px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        background: #fff no-repeat center center;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        color: #424242
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive a:after, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu a:after, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_beginners a:after, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_why a:after {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive a:hover, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu a:hover, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_beginners a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_beginners a:hover, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_why a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_why a:hover {
+        border: 1px solid #fba100;
+        color: #fba100
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_beginners a {
+        background-image: url(/resource/images/common_module/pc/img_what_is_kintone_beginners.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.what_is_kintone_why a {
+        background-image: url(/resource/images/common_module/pc/img_what_is_kintone_why.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu a {
+        background-image: url(/resource/images/common_module/pc/img_support_menu.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive a {
+        background-image: url(/resource/images/common_module/pc/img_event_hive.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_administration, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_apps, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_basic, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_integrate {
+        width: 230px;
+        height: 112px;
+        display: block
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_administration a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_apps a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_basic a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_integrate a {
+        padding-top: 76px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        background: #fff no-repeat center center;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        color: #424242
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_administration a:after, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_apps a:after, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_basic a:after, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_integrate a:after {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_administration a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_administration a:hover, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_apps a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_apps a:hover, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_basic a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_basic a:hover, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_integrate a.active, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_integrate a:hover {
+        border: 1px solid #fba100;
+        color: #fba100
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_basic a {
+        background-image: url(/resource/images/common_module/pc/img_feature_basic.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_apps a {
+        background-image: url(/resource/images/common_module/pc/img_feature_apps.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_integrate a {
+        background-image: url(/resource/images/common_module/pc/img_feature_integrate.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.feature_administration a {
+        background-image: url(/resource/images/common_module/pc/img_feature_administration.png)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.sub_content {
+        margin-right: 4px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.sub_content>a:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -2px;
+        margin-left: 6px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 4px 0;
+        border-color: #757575 transparent transparent
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.hover>a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li:hover>a {
+        color: #ffbf00;
+        background-color: #fff59d
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.hover>a:before, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li:hover>a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 0;
+        border-color: transparent #fff transparent transparent
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.hover.sub_content>a:after, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li:hover.sub_content>a:after {
+        border-color: #ffbf00 transparent transparent
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.hover .sub, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li:hover .sub {
+        max-height: 100vh;
+        z-index: 1
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try {
+        width: 100%
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try.hover .frame, header.common_header .main_header .inner nav.navigations .menu_frame .try:hover .frame {
+        height: 368px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try p.try_btn {
+        margin-left: 360px;
+        margin-bottom: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try p.try_btn a {
+        position: relative;
+        display: block;
+        padding: 10px 10px 10px 16px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        background: #fdd835
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try p.try_btn a:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-style: solid;
+        border-width: 15px 15px 0 0;
+        border-color: #fff transparent transparent
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try p.try_btn a span:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -2px;
+        margin-left: 6px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 4px 0;
+        border-color: #757575 transparent transparent
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 100;
+        background: #fdd835;
+        overflow: hidden;
+        height: 0;
+        transform-style: preserve-3d;
+        transition-property: height;
+        transition-duration: .3s;
+        transition-timing-function: cubic-bezier(.645, .045, .355, 1);
+        transition-delay: 0s
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul {
+        margin: 34px auto 0 auto;
+        width: 784px;
+        position: relative;
+        z-index: 101
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li.simulator {
+        float: left
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li.trial {
+        float: right
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a {
+        width: 368px;
+        display: block;
+        color: #000
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a dl {
+        text-align: center
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a dl dt {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: 400;
+        height: 42px
+    }
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li.simulator a dl dt .simulator_smallTtl{
+        font-size: 14px;
+        display: block;
+    }
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a dl dd span {
+        display: block
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a dl dd span.image {
+        line-height: 0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a dl dd span.image img {
+        transform-style: preserve-3d;
+        transition-property: opacity;
+        transition-duration: .3s;
+        transition-timing-function: linear;
+        transition-delay: 0s
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a dl dd span.caption {
+        margin-top: 12px;
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        font-size: 15px;
+        font-weight: 700
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a:hover dl dd span.image img {
+        opacity: .6
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav {
+        margin-left: -480px;
+        width: 960px;
+        position: absolute;
+        top: 3px;
+        left: 50%
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul {
+        width: 100%;
+        text-align: right
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li {
+        padding-left: 15px;
+        display: inline-block;
+        position: relative
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -1px;
+        width: 4px;
+        height: 4px;
+        background-color: #bdbdbd;
+        transform: rotate(45deg)
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li a {
+        margin-right: 15px;
+        font-size: 11px;
+        color: #616161
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li a:hover {
+        opacity: .6
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li:last-child {
+        padding-right: 0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li:last-child:after {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li:last-child a {
+        margin-right: 0
+    }
+
+    header.common_header .local_content {
+        width: 100%;
+        background-color: #ffeb3b
+    }
+
+    header.common_header .local_content .local_navigations {
+        margin: 0 auto;
+        width: 960px;
+        height: 48px
+    }
+
+    header.common_header .local_content .local_navigations:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    header.common_header .local_content .local_navigations ul.bread_crumb {
+        float: left;
+        font-size: 0;
+        padding-top: 18px
+    }
+
+    header.common_header .local_content .local_navigations ul.bread_crumb li {
+        display: inline-block;
+        font-size: 11px;
+        line-height: 14px;
+        vertical-align: bottom;
+        padding-right: 10px;
+        margin-right: 5px;
+        background: url(/resource/images/common/bc_arrow.png) no-repeat right center;
+        color: #757575
+    }
+
+    header.common_header .local_content .local_navigations ul.bread_crumb li:last-child {
+        padding-right: 5px;
+        background: 0 0
+    }
+
+    header.common_header .local_content .local_navigations ul.bread_crumb li:first-child a {
+        padding-left: 18px;
+        display: block;
+        height: 14px;
+        background: url(/resource/images/common/ico_home.png) no-repeat left top
+    }
+
+    header.common_header .local_content .local_navigations ul.bread_crumb li a {
+        display: inline-block;
+        padding: 0 5px;
+        color: #757575
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav {
+        float: right;
+        font-size: 0;
+        padding-top: 18px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li {
+        display: inline-block;
+        margin-right: 30px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li a {
+        padding-left: 20px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        line-height: 16px;
+        color: #424242
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.beginners {
+        background: url(/resource/images/common/ico_beginners.png) no-repeat left center
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.beginners.on {
+        background-image: url(/resource/images/common/ico_beginners_on.png)
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.why {
+        background: url(/resource/images/common/ico_why.png) no-repeat left center
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.why.on {
+        background-image: url(/resource/images/common/ico_why_on.png)
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.feature {
+        background: url(/resource/images/common/ico_feature.png) no-repeat left center
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.feature.on {
+        background-image: url(/resource/images/common/ico_feature_on.png)
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.apps {
+        background: url(/resource/images/common/ico_apps.png) no-repeat left center
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.apps.on {
+        background-image: url(/resource/images/common/ico_apps_on.png)
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.integrate {
+        background: url(/resource/images/common/ico_integrate.png) no-repeat left center
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.integrate.on {
+        background-image: url(/resource/images/common/ico_integrate_on.png)
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.administration {
+        background: url(/resource/images/common/ico_administration.png) no-repeat left center
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.administration.on {
+        background-image: url(/resource/images/common/ico_administration_on.png)
+    }
+
+    footer.common_footer {
+        width: 100%
+    }
+
+    footer.common_footer .footer_nav {
+        padding: 20px 0 40px;
+        background-color: #eee
+    }
+
+    footer.common_footer .footer_nav .head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 960px;
+        margin: 0 auto 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: solid 1px #ccc
+    }
+
+    footer.common_footer .footer_nav .head .catch img, footer.common_footer .footer_nav .head .catch p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0
+    }
+
+    footer.common_footer .footer_nav .head .catch img {
+        padding: 20px 20px 25px 0
+    }
+
+    footer.common_footer .footer_nav .head .sns {
+        margin-left: 20px;
+        vertical-align: middle
+    }
+
+    footer.common_footer .footer_nav .row {
+        width: 960px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    footer.common_footer .footer_nav .row>div {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    footer.common_footer .footer_nav .row .col {
+        width: 25%
+    }
+
+    footer.common_footer .footer_nav .row .col ul {
+        font-size: 11px
+    }
+
+    footer.common_footer .footer_nav .row .col ul li {
+        margin-bottom: 15px
+    }
+
+    footer.common_footer .footer_nav .row .col ul li a {
+        color: #424242
+    }
+
+    footer.common_footer .footer_nav .row .col ul li a.is-bold {
+        color: #757575
+    }
+
+    footer.common_footer .footer_nav dl.apps {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 960px;
+        margin: 0 auto
+    }
+
+    footer.common_footer .footer_nav dl.apps dt.title {
+        margin-right: 30px
+    }
+
+    footer.common_footer .footer_nav dl.apps dt.title img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px
+    }
+
+    footer.common_footer .footer_nav dl.apps dt.title span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 11px;
+        font-weight: 400;
+        color: #757575
+    }
+
+    footer.common_footer .footer_nav dl.apps dd.link {
+        margin-right: 5px
+    }
+
+    footer.common_footer .corp {
+        padding: 40px 0;
+        background-color: #e0e0e0
+    }
+
+    footer.common_footer .corp .lists {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        width: 960px;
+        margin: 0 auto 20px;
+        font-size: 11px
+    }
+
+    footer.common_footer .corp .lists li {
+        margin-right: 20px
+    }
+
+    footer.common_footer .corp .lists li a {
+        color: #424242
+    }
+
+    footer.common_footer .corp .copyright {
+        width: 960px;
+        margin: 0 auto;
+        font-size: 11px;
+        color: #757575
+    }
+
+    .footer_banner_area {
+        padding: 96px 0 104px 0;
+        width: 100%;
+        box-sizing: border-box;
+        background: #fffde7;
+        clear: both
+    }
+
+    .footer_banner_area .inner {
+        margin: 0 auto;
+        width: 960px;
+        overflow: hidden
+    }
+
+    .footer_banner_area .inner ul.more_contents {
+        width: 100%;
+        overflow: hidden
+    }
+
+    .footer_banner_area .inner ul.more_contents li {
+        margin: 0 8px;
+        width: 224px;
+        border: 1px solid #eee;
+        box-sizing: border-box;
+        background: #fff no-repeat center top;
+        float: left
+    }
+
+    .footer_banner_area .inner ul.more_contents li:hover {
+        opacity: .7
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(1) {
+        background-image: url(/resource/images/common_module/pc/img_footer_banner_more6.jpg)
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(2) {
+        background-image: url(/resource/images/common_module/pc/img_footer_banner_more2.png)
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(3) {
+        background-image: url(/resource/images/common_module/pc/img_footer_banner_more3.png)
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(4) {
+        background-image: url(/resource/images/common_module/pc/img_footer_banner_more5.jpg)
+    }
+
+    .footer_banner_area .inner ul.more_contents li a {
+        padding-top: 127px;
+        padding-bottom: 6px;
+        display: block
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl {
+        height: 79px;
+        text-align: center
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl dt {
+        padding: 10px 0;
+        font-size: 14px;
+        color: #000
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl dd {
+        line-height: 18px;
+        font-size: 13px;
+        color: #616161
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl dd small {
+        display: block;
+        font-size: 12px;
+        color: #999
+    }
+
+    .footer_banner_area.type_a .simulator {
+        margin: 0 auto 96px auto;
+        width: 784px;
+        height: 288px;
+        display: block;
+        position: relative;
+        background: url(/resource/images/common_module/pc/img_banner_simulator_a.png) no-repeat center center
+    }
+
+    .footer_banner_area.type_a.type_c .simulator {
+        background: url(/resource/images/common_module/pc/img_banner_simulator_c.png) no-repeat center center
+    }
+
+    .footer_banner_area.type_a .simulator:hover {
+        opacity: .7
+    }
+
+    .footer_banner_area.type_a .simulator a {
+        width: 100%;
+        height: 100%;
+        display: block
+    }
+
+    .footer_banner_area.type_a .simulator a dl {
+        position: relative
+    }
+
+    .footer_banner_area.type_a .simulator a dl span {
+        height: 1px;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden
+    }
+
+    .footer_banner_area.type_a .simulator a p.copy {
+        width: 310px;
+        position: absolute;
+        left: 50px;
+        top: 174px;
+        line-height: 24px;
+        font-size: 15px;
+        color: #000
+    }
+
+    .footer_banner_area.type_a .simulator a p.btn {
+        width: 100%;
+        position: absolute;
+        top: 262px;
+        left: 0;
+        margin: 0;
+        padding: 0
+    }
+
+    .footer_banner_area.type_a .simulator a p.btn span {
+        margin: 0 auto;
+        width: 272px;
+        height: 48px;
+        display: block;
+        position: relative;
+        background: #ffeb3b;
+        line-height: 48px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_a .simulator a p.btn span:hover {
+        text-decoration: none
+    }
+
+    .footer_banner_area.type_a .simulator a p.btn span:after, .footer_banner_area.type_a .simulator a p.btn span:before {
+        content: "";
+        width: 24px;
+        height: 48px;
+        display: block;
+        background: no-repeat center center;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a .simulator a p.btn span:before {
+        background-image: url(../images/common_module/pc/btn_b_left.png);
+        left: -24px
+    }
+
+    .footer_banner_area.type_a .simulator a p.btn span:after {
+        background-image: url(../images/common_module/pc/btn_b_right.png);
+        right: -24px
+    }
+
+    .footer_banner_area.type_a ul.banners {
+        margin-bottom: 50px;
+        overflow: hidden
+    }
+
+    .footer_banner_area.type_a ul.banners li {
+        width: 471px;
+        height: 336px;
+        position: relative
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie {
+        float: left;
+        background: url(../images/common_module/pc/bg_banner_movie.png) no-repeat left top
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie:hover {
+        opacity: .7
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a {
+        width: 100%;
+        height: 100%;
+        display: block
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span {
+        margin-left: -56px;
+        width: 112px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        top: 255px;
+        left: 50%;
+        background: #ffeb3b;
+        line-height: 32px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span:hover {
+        text-decoration: none
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span:after, .footer_banner_area.type_a ul.banners li.movie a dl dd span:before {
+        content: "";
+        width: 16px;
+        height: 32px;
+        display: block;
+        background: no-repeat center center;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span:before {
+        background-image: url(../images/common_module/pc/btn_left.png);
+        left: -16px
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span:after {
+        background-image: url(../images/common_module/pc/btn_right.png);
+        right: -16px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog {
+        float: right;
+        background: url(../images/common_module/pc/bg_banner_catalog.png) no-repeat right bottom
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a:hover {
+        opacity: .7
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf {
+        width: 144px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        top: 155px;
+        left: 260px;
+        background: #ffeb3b;
+        line-height: 32px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:hover {
+        text-decoration: none
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:after, .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:before {
+        content: "";
+        width: 16px;
+        height: 32px;
+        display: block;
+        background: no-repeat center center;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:before {
+        background-image: url(../images/common_module/pc/btn_left.png);
+        left: -16px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:after {
+        background-image: url(../images/common_module/pc/btn_right.png);
+        right: -16px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other {
+        margin-left: -72px;
+        width: 144px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        top: 270px;
+        left: 50%;
+        background: url(../images/common_module/pc/btn_w_main.png) repeat-x center center;
+        line-height: 32px;
+        text-align: center;
+        font-size: 11px;
+        color: #000
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:hover {
+        text-decoration: none
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:after, .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:before {
+        content: "";
+        width: 16px;
+        height: 32px;
+        display: block;
+        background: no-repeat center center;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:before {
+        background-image: url(../images/common_module/pc/btn_w_left.png);
+        left: -16px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:after {
+        background-image: url(../images/common_module/pc/btn_w_right.png);
+        right: -16px
+    }
+
+    .footer_banner_area.type_a ul.banners li dl dt {
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        line-height: 24px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #424242
+    }
+
+    .footer_banner_area.type_a p.msg {
+        margin-bottom: 28px;
+        text-align: center;
+        font-size: 15px;
+        color: #4c4c4c
+    }
+
+    .footer_banner_area.type_a p.free_trial {
+        margin-bottom: 72px;
+        text-align: center
+    }
+
+    .footer_banner_area.type_a p.free_trial a {
+        margin: 0 auto;
+        width: 272px;
+        height: 48px;
+        display: block;
+        position: relative;
+        background: #ffeb3b;
+        line-height: 48px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_a p.free_trial a:hover {
+        text-decoration: none;
+        opacity: .7
+    }
+
+    .footer_banner_area.type_a p.free_trial a:after, .footer_banner_area.type_a p.free_trial a:before {
+        content: "";
+        width: 24px;
+        height: 48px;
+        display: block;
+        background: no-repeat center center;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a p.free_trial a:before {
+        background-image: url(../images/common_module/pc/btn_b_left.png);
+        left: -24px
+    }
+
+    .footer_banner_area.type_a p.free_trial a:after {
+        background-image: url(../images/common_module/pc/btn_b_right.png);
+        right: -24px
+    }
+
+    .footer_banner_area.type_b ul.banners {
+        margin: 0 auto 96px auto;
+        width: 944px
+    }
+
+    .footer_banner_area.type_b ul.banners:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    .footer_banner_area.type_b ul.banners li {
+        margin: 0 auto;
+        width: 472px;
+        height: 336px;
+        background: no-repeat center center;
+        position: relative
+    }
+
+    .footer_banner_area.type_b ul.banners li:hover {
+        opacity: .7
+    }
+
+    .footer_banner_area.type_b ul.banners li a {
+        width: 100%;
+        height: 100%;
+        display: block
+    }
+
+    .footer_banner_area.type_b ul.banners li a span.title {
+        margin-bottom: 26px;
+        width: 100%;
+        height: 48px;
+        display: block;
+        text-align: center;
+        line-height: 48px;
+        font-size: 18px;
+        color: #424242
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl {
+        width: 100%
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dt {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        color: #424242
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd {
+        width: 100%;
+        position: absolute;
+        bottom: -14px;
+        left: 0
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span {
+        margin: 0 auto;
+        width: 112px;
+        height: 32px;
+        display: block;
+        position: relative;
+        background: #ffeb3b;
+        line-height: 32px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span:hover {
+        text-decoration: none
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span:after, .footer_banner_area.type_b ul.banners li a dl dd span:before {
+        content: "";
+        width: 16px;
+        height: 32px;
+        display: block;
+        background: no-repeat center center;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span:before {
+        background-image: url(../images/common_module/pc/btn_left.png);
+        left: -16px
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span:after {
+        background-image: url(../images/common_module/pc/btn_right.png);
+        right: -16px
+    }
+
+    .footer_banner_area.type_b ul.banners li.simulator {
+        background-image: url(../images/common_module/pc/bg_banner_simulator.png);
+        float: left
+    }
+
+    .footer_banner_area.type_b ul.banners li.trial {
+        background-image: url(../images/common_module/pc/bg_banner_trial.png);
+        float: right
+    }
+
+    .common_site_footer {
+        width: 100%;
+        min-width: 960px;
+    }
+
+    .common_site_footer ol, .common_site_footer ul {
+        padding: 0;
+        list-style: none
+    }
+
+    .common_site_footer .nav {
+        padding: 20px 0 40px;
+        background-color: #eee
+    }
+
+    .common_site_footer .nav_head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 960px;
+        margin: 0 auto 25px;
+    }
+
+    .common_site_footer .nav_head a:hover{
+      opacity: 1;
+    }
+
+    .common_site_footer .nav_head_catch>a, .common_site_footer .nav_head_catch>p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0
+    }
+
+    .common_site_footer .nav_head_catch a>img {
+        padding: 20px 20px 25px 0
+    }
+
+    .common_site_footer .nav_head_sns {
+        line-height: 0
+    }
+
+    .common_site_footer .nav_head_sns>* {
+        margin-left: 20px;
+        vertical-align: middle;
+        display: inline-block
+    }
+
+    .common_site_footer .nav_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 0 30px;
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .common_site_footer .nav_col {
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .common_site_footer .nav_col dl{
+      color: #616161;
+    }
+
+    .common_site_footer .nav_col dl dt{
+      margin-bottom: 8px;
+      padding-top: 12px;
+      border-bottom: 1px solid #757575;
+      line-height: 40px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .common_site_footer .nav_col dl dd{
+
+    }
+
+    .common_site_footer .nav_col_lists {
+        font-size: 12px
+    }
+
+    .common_site_footer .nav_col_lists li {
+      line-height: 20px
+    }
+    .common_site_footer .nav_col_lists ul.sub li:last-child{
+      padding-bottom: 0;
+    }
+
+    .common_site_footer .nav_col_lists li a {
+        padding: 5px 0;
+        display: block;
+        color: #757575
+    }
+
+    .common_site_footer .nav_col_lists li ul{
+      padding-left: 10px;
+    }
+
+    .common_site_footer .footer_sub_nav{
+      margin: 30px auto 0 auto;
+      padding: 30px 0 60px 0;
+      max-width: 960px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .common_site_footer .footer_sub_nav ul.sub_nav{
+      width: calc(100% - 366px);
+      float: left;
+      line-height: 0;
+      font-size: 0;
+    }
+
+    .common_site_footer .footer_sub_nav ul.sub_nav li{
+      padding: 0 7px;
+      position: relative;
+      display: inline-block;
+      line-height: 30px;
+      font-size: 12px;
+    }
+
+    .common_site_footer .footer_sub_nav ul.sub_nav li:after{
+      content: '';
+      width: 1px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 6px);
+      background: #898989;
+    }
+    .common_site_footer .footer_sub_nav ul.sub_nav li:nth-child(5):after,
+    .common_site_footer .footer_sub_nav ul.sub_nav li:last-child:after{
+      display: none;
+    }
+    .common_site_footer .footer_sub_nav ul.sub_nav li a{
+      color: #757575;
+    }
+
+    .common_site_footer .footer_sub_nav ul.nav_apps{
+      padding-top: 11px;
+      width: 366px;
+      float: right;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 0 12px;
+    }
+
+    .common_site_footer .footer_sub_nav ul.nav_apps li.sns{
+
+    }
+
+    .common_site_footer .footer_sub_nav ul.nav_apps li.sns a{
+      display: block;
+    }
+
+    .common_site_footer .footer_sub_nav ul.nav_apps li.sns a img{
+      width: 30px;
+      height: 30px;
+    }
+    .common_site_footer .footer_sub_nav ul.nav_apps li.app_store{
+      padding-left: 8px;
+    }
+
+    .common_site_footer .good_design {
+        margin: 0 auto;
+        width: 930px;
+        position: relative;
+        overflow: visible
+    }
+
+    .common_site_footer .good_design .inset {
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+    .common_site_footer .good_design .inset p.logo {
+        margin-bottom: 8px
+    }
+
+    .common_site_footer .good_design .inset p.logo img {
+        width: 143px;
+        height: 24px
+    }
+
+    .common_site_footer .good_design .inset p.text {
+        font-size: 11px;
+        color: #757575
+    }
+
+    .common_site_footer .nav_app {
+        width: 960px;
+        margin: 0 auto
+    }
+
+    .common_site_footer .nav_app_head {
+        margin-right: 30px
+    }
+
+    .common_site_footer .nav_app_head>img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px
+    }
+
+    .common_site_footer .nav_app_head>span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 11px;
+        font-weight: 400;
+        color: #757575
+    }
+
+    .common_site_footer .nav_app_link {
+        margin-right: 5px
+    }
+
+    .common_site_footer .corp {
+        padding: 40px 0;
+        background-color: #616161
+    }
+
+    .common_site_footer .corp_lists {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        width: 960px;
+        margin: 0 auto 20px;
+        font-size: 11px
+    }
+
+    .common_site_footer .corp_lists>li {
+        margin-right: 12px;
+        padding-right: 12px;
+        position: relative;
+    }
+
+    .common_site_footer .corp_lists>li:after{
+      content: '';
+      width: 1px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 6px);
+      background: #b1b1b1;
+    }
+    .common_site_footer .corp_lists>li:last-child:after{
+      display: none;
+    }
+
+    .common_site_footer .corp_lists>li{
+
+    }
+
+    .common_site_footer .corp_lists>li>a {
+        color: #e0e0e0
+    }
+
+    .common_site_footer .corp_copyright {
+        width: 960px;
+        margin: 0 auto;
+        font-size: 11px;
+        color: #bdbdbd
+    }
+
+    .common_site_footer .cybozu_group_site {
+        width: 100%;
+        background: #bdbdbd
+    }
+
+    .common_site_footer .cybozu_group_site .inner {
+        margin: 0 auto;
+        padding: 16px 0 32px 0;
+        width: 944px;
+        overflow: visible
+    }
+
+    .common_site_footer .cybozu_group_site .inner:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl {
+        margin: 0 8px 0 0;
+        overflow: visible;
+        float: left
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl.media {
+        margin: 0
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dt {
+        margin-bottom: 8px;
+        padding-left: 8px;
+        border-left: 2px solid #fff;
+        line-height: 16px;
+        font-size: 10px;
+        color: #fff
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd {
+        overflow: visible
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul {
+        padding: 0;
+        list-style: none;
+        overflow: visible;
+        position: relative;
+    }
+    .common_site_footer .cybozu_group_site .inner dl dd ul:before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 8px 8px;
+      border-color: transparent transparent #bdbdbd transparent;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li {
+        margin: 0 1px 0 0;
+        float: left
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li:last-child {
+        margin-right: 0
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li a {
+        width: 132px;
+        height: 48px;
+        display: block;
+        background-color: #f5f5f5;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li a span {
+        height: 1px;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.cybozu a {
+        background-image: url(../images/common_module/pc/img_footer_banner_cybozu.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.kintone a {
+        background-image: url(../images/common_module/pc/img_footer_banner_kintone.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.garoon a {
+        background-image: url(../images/common_module/pc/img_footer_banner_garoon.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.office a {
+        background-image: url(../images/common_module/pc/img_footer_banner_office.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.mailwise a {
+        background-image: url(../images/common_module/pc/img_footer_banner_mailwise.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.teamwork a {
+        background-image: url(../images/common_module/pc/img_footer_banner_teamwork.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.cybozushiki a {
+        background-image: url(../images/common_module/pc/img_footer_banner_cybozushiki.png)
+    }
+
+    .overlay_movie {
+        display: none;
+        position: fixed;
+        top: -10px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        background-color: #fff;
+        overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        z-index: 200
+    }
+
+    .overlay_movie .container {
+        display: table;
+        padding: 10px 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .overlay_movie .container .inner {
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .overlay_movie .container .inner iframe {
+        margin: 0 auto;
+        width: 900px;
+        height: 506px;
+        display: block
+    }
+
+    .overlay_movie .container .inner .close {
+        margin-top: 40px;
+        width: 100%;
+        float: none;
+        opacity: 1;
+        text-align: center
+    }
+
+    .overlay_movie .container .inner .close img {
+        cursor: pointer
+    }
+
+    a.move_page_top {
+        display: block;
+        position: fixed;
+        right: 18px;
+        bottom: 20px;
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        background: #bdbdbd;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        overflow: hidden
+    }
+
+    a.move_page_top .arrow {
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 12px 0 0;
+        border-color: #fff transparent transparent
+    }
+
+    .pc_none {
+        display: none !important
+    }
+}
+
+@media screen and (max-width:767px) {
+    body {
+        padding-top: 51px
+    }
+
+    body a:hover{
+      opacity: 1;
+    }
+
+    header.common_header {
+        display: block !important
+    }
+
+    header.common_header .sub_header {
+        display: none
+    }
+
+    header.common_header .main_header {
+        height: 50px;
+        border-bottom: solid 1px #ffeb3b;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100
+    }
+
+    header.common_header .main_header .inner p.logo {
+        margin: 0 auto;
+        width: 108px;
+        overflow: hidden;
+        position: relative;
+        z-index: 10
+    }
+
+    header.common_header .main_header .inner p.logo a {
+        margin: 14px auto 0 auto;
+        width: 108px;
+        height: 19px;
+        display: block;
+        border: none;
+        background-color: transparent;
+        background-image: url(/resource/images/common_module/sp/img_logo_kintone_head.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative
+    }
+
+    header.common_header .main_header .inner p.logo a span {
+        height: 1px;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden
+    }
+
+    header.common_header .main_header .inner nav.navigations {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9
+    }
+
+    header.common_header .main_header .inner nav.navigations p.menu_btn {
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+    header.common_header .main_header .inner nav.navigations p.menu_btn a {
+        width: 50px;
+        height: 50px;
+        background: url(/resource/images/common_module/sp/icon_menu.png) no-repeat center center/20px 12px;
+        display: block;
+        position: relative
+    }
+
+    header.common_header .main_header .inner nav.navigations p.menu_btn a span {
+        height: 1px;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame {
+        margin-top: 50px;
+        min-height: 0;
+        max-height: 0;
+        height: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        background: #fff;
+        pointer-events: none;
+        -webkit-overflow-scrolling: touch;
+        transform-style: preserve-3d;
+        transition-property: all;
+        transition-duration: .3s;
+        transition-timing-function: linear;
+        transition-delay: 0s
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame.show {
+        height: auto;
+        max-height: calc(100vh - 50px);
+        min-height: calc(100vh - 50px);
+        overflow: scroll;
+        pointer-events: auto
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu {
+        padding: 18px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul {
+        border-top: solid 1px #e0e0e0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li {
+        border-bottom: solid 1px #e0e0e0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>a {
+        padding: 15px 0;
+        display: block;
+        position: relative;
+        font-size: 16px;
+        font-weight: 700;
+        color: #616161
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.sub_content>a.open:after {
+        content: "-"
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li.sub_content>a:after {
+        content: "+";
+        display: inline-block;
+        position: absolute;
+        font-size: 14px;
+        font-weight: 400;
+        right: 10px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li .sub {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li .sub .sub_inner dl {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li .sub .sub_inner ul {
+        padding-top: 25px;
+        border-top: solid 1px #e0e0e0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li .sub .sub_inner ul li {
+        margin-bottom: 25px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li .sub .sub_inner ul li a {
+        font-size: 14px;
+        color: #616161
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li .sub .sub_inner ul li a br {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try {
+        padding: 18px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try p.try_btn {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li {
+        margin-bottom: 9px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li.simulator {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a {
+        margin: 0 auto;
+        width: 256.5px;
+        height: 40px;
+        display: block;
+        background: url(/resource/images/common_module/sp/btn_try.png) no-repeat center center/contain
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a dl {
+        display: none
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .try .frame ul li a span {
+        display: block;
+        text-align: center;
+        line-height: 40px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav {
+        padding: 18px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul {
+        width: 100%;
+        overflow: hidden
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .sub_nav ul li {
+        padding: 7px 5px 7px 0;
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+        line-height: 18px;
+        font-size: 14px;
+        color: #616161
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame p.foot_close {
+        margin: 58px 0 128px 0;
+        clear: both;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame p.foot_close a {
+        width: 26px;
+        height: 26px;
+        display: block;
+        display: inline-block;
+        font-family: "Glyphicons Halflings";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame p.foot_close a span {
+        height: 1px;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame p.foot_close a:before {
+        content: "+";
+        transform: rotate(45deg);
+        display: block
+    }
+
+    header.common_header .local_content {
+        position: relative;
+        background: #ffeb3b
+    }
+
+    header.common_header .local_content nav.local_navigations {
+        overflow-x: scroll;
+        position: relative;
+        padding: 0 19px
+    }
+
+    header.common_header .local_content nav.local_navigations ul.bread_crumb {
+        display: none
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li {
+        width: 78px;
+        height: 73px;
+        padding: 0;
+        text-align: center
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li a {
+        padding-top: 48px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: no-repeat center 14px;
+        background-size: 28px 28px;
+        box-sizing: border-box;
+        text-align: center;
+        font-weight: 700;
+        font-size: 10px;
+        color: #424242
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li.beginners, header.common_header .local_content nav.local_navigations ul.app_nav li.why {
+        width: 50%
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li.beginners a {
+        background-image: url(/resource/images/common_module/sp/icon_app_nav_beginners.png)
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li.why a {
+        background-image: url(/resource/images/common_module/sp/icon_app_nav_why.png)
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li.feature a {
+        background-image: url(/resource/images/common_module/sp/icon_app_nav_feature.png)
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li.apps a {
+        background-image: url(/resource/images/common_module/sp/icon_app_nav_apps.png)
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li.integrate a {
+        background-image: url(/resource/images/common_module/sp/icon_app_nav_integrate.png)
+    }
+
+    header.common_header .local_content nav.local_navigations ul.app_nav li.administration a {
+        background-image: url(/resource/images/common_module/sp/icon_app_nav_administration.png)
+    }
+
+    footer.common_footer {
+        width: 100%;
+        background: #eee
+    }
+
+    footer.common_footer .footer_nav {
+        width: 100%
+    }
+
+    footer.common_footer .footer_nav .head {
+        margin: 0 auto;
+        width: 288px;
+        height: 120px;
+        position: relative
+    }
+
+    footer.common_footer .footer_nav .head .catch {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        left: 0
+    }
+
+    footer.common_footer .footer_nav .head .catch a {
+        display: block;
+        float: left
+    }
+
+    footer.common_footer .footer_nav .head .catch a img {
+        width: 97.5px;
+        height: 17px
+    }
+
+    footer.common_footer .footer_nav .head .catch p {
+        display: block;
+        float: right;
+        font-size: 15px
+    }
+
+    footer.common_footer .footer_nav .head .sns {
+        width: 100%;
+        position: absolute;
+        top: 32px;
+        left: 0;
+        text-align: center;
+        line-height: 0
+    }
+
+    footer.common_footer .footer_nav .row {
+        margin: 0;
+        padding: 18px;
+        border-top: 1px solid #ccc
+    }
+
+    footer.common_footer .footer_nav .row ul {
+        width: 100%;
+        overflow: hidden
+    }
+
+    footer.common_footer .footer_nav .row ul li {
+        width: 50%;
+        float: left
+    }
+
+    footer.common_footer .footer_nav .row ul li a {
+        text-align: left;
+        line-height: 45px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #333
+    }
+
+    footer.common_footer .footer_nav dl.apps {
+        margin-bottom: 32px;
+        padding: 18px;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        box-sizing: border-box;
+        overflow: hidden
+    }
+
+    footer.common_footer .footer_nav dl.apps dt.title {
+        margin-bottom: 19px;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 14px
+    }
+
+    footer.common_footer .footer_nav dl.apps dt.title img {
+        width: 14px;
+        height: 22.5px
+    }
+
+    footer.common_footer .footer_nav dl.apps dt.title span {
+        padding-left: 9px;
+        display: inline-block;
+        line-height: 22.5px
+    }
+
+    footer.common_footer .footer_nav dl.apps dt.title span br {
+        display: none
+    }
+
+    footer.common_footer .footer_nav dl.apps dd.link {
+        width: 50%
+    }
+
+    footer.common_footer .footer_nav dl.apps dd.link.apple {
+        padding-right: 8px;
+        float: left
+    }
+
+    footer.common_footer .footer_nav dl.apps dd.link.google {
+        padding-left: 8px;
+        float: right
+    }
+
+    footer.common_footer .corp {
+        padding: 18px;
+        background: #e0e0e0
+    }
+
+    footer.common_footer .corp ul.lists {
+        margin-bottom: 25px;
+        overflow: hidden
+    }
+
+    footer.common_footer .corp ul.lists li {
+        display: inline-block;
+        line-height: 10px;
+        font-size: 10px;
+        margin-bottom: 5px;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #bdbdbd
+    }
+
+    footer.common_footer .corp ul.lists li a {
+        color: #424242;
+        text-decoration: none
+    }
+
+    footer.common_footer .corp .copyright {
+        line-height: 18px;
+        font-size: 10px;
+        color: #757575
+    }
+
+    .footer_banner_area {
+        padding: 48px 16px 47px 16px;
+        width: 100%;
+        box-sizing: border-box;
+        background: #fffde7;
+        clear: both
+    }
+
+    .footer_banner_area .inner {
+        margin: 0 auto;
+        overflow: hidden
+    }
+
+    .footer_banner_area .inner ul.more_contents {
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee
+    }
+
+    .footer_banner_area .inner ul.more_contents li {
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(1) a {
+        background-image: url(/resource/images/common_module/sp/img_footer_banner_more6.jpg)
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(2) a {
+        background-image: url(/resource/images/common_module/sp/img_footer_banner_more2.png)
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(3) a {
+        background-image: url(/resource/images/common_module/sp/img_footer_banner_more3.png)
+    }
+
+    .footer_banner_area .inner ul.more_contents li:nth-child(4) a {
+        background-image: url(/resource/images/common_module/sp/img_footer_banner_more5.jpg)
+    }
+
+    .footer_banner_area .inner ul.more_contents li a {
+        padding-left: 87px;
+        min-height: 95px;
+        display: block;
+        overflow: hidden;
+        background: #fff no-repeat left top/87px 95px
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl {
+        margin: 9px 20px 0 16px
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl dt {
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl dd {
+        line-height: 24px;
+        font-size: 13px;
+        color: #616161
+    }
+
+    .footer_banner_area .inner ul.more_contents li a dl dd small {
+        display: block;
+        font-size: 10px;
+        color: #999
+    }
+
+    .footer_banner_area.type_a .simulator {
+        display: none
+    }
+
+    .footer_banner_area.type_a ul.banners {
+        margin-bottom: 25px
+    }
+
+    .footer_banner_area.type_a ul.banners li {
+        margin: 0 auto;
+        width: 289.5px;
+        background: no-repeat center center/contain;
+        overflow: hidden;
+        position: relative
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie {
+        margin-bottom: 4px;
+        height: 214px;
+        background-image: url(../images/common_module/sp/bg_banner_movie.png)
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a {
+        display: block
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd {
+        margin-top: 114px
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span {
+        margin: 0 auto;
+        width: 128px;
+        height: 40px;
+        display: block;
+        position: relative;
+        background: #ffeb3b;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span:after, .footer_banner_area.type_a ul.banners li.movie a dl dd span:before {
+        content: "";
+        width: 20px;
+        height: 40px;
+        display: block;
+        background: no-repeat center center/20px 40px;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span:before {
+        background-image: url(../images/common_module/sp/btn_left.png);
+        left: -20px
+    }
+
+    .footer_banner_area.type_a ul.banners li.movie a dl dd span:after {
+        background-image: url(../images/common_module/sp/btn_right.png);
+        right: -20px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog {
+        height: 166px;
+        background-image: url(../images/common_module/sp/bg_banner_catalog.png)
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd {
+        margin-top: 15px;
+        margin-left: 120px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a {
+        margin-bottom: 8px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf {
+        width: 126px;
+        height: 40px;
+        display: block;
+        position: relative;
+        background: #ffeb3b;
+        line-height: 40px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:after, .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:before {
+        content: "";
+        width: 20px;
+        height: 40px;
+        display: block;
+        background: no-repeat center center/20px 40px;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:before {
+        background-image: url(../images/common_module/sp/btn_left.png);
+        left: -20px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.pdf:after {
+        background-image: url(../images/common_module/sp/btn_right.png);
+        right: -20px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other {
+        width: 126px;
+        height: 40px;
+        display: block;
+        position: relative;
+        background: url(../images/common_module/sp/btn_w_main.png) repeat-x center center/contain;
+        line-height: 40px;
+        text-align: center;
+        font-size: 12px;
+        color: #000
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:after, .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:before {
+        content: "";
+        width: 21px;
+        height: 40px;
+        display: block;
+        background: no-repeat center center/21px 40px;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:before {
+        background-image: url(../images/common_module/sp/btn_w_left.png);
+        left: -21px
+    }
+
+    .footer_banner_area.type_a ul.banners li.catalog dl dd a.other:after {
+        background-image: url(../images/common_module/sp/btn_w_right.png);
+        right: -21px
+    }
+
+    .footer_banner_area.type_a ul.banners li dl dt {
+        margin-top: 14px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700
+    }
+
+    .footer_banner_area.type_a p.msg {
+        margin-bottom: 14px;
+        text-align: center;
+        line-height: 24px;
+        font-size: 14px;
+        color: #4c4c4c
+    }
+
+    .footer_banner_area.type_a p.free_trial {
+        margin-bottom: 40px;
+        text-align: center
+    }
+
+    .footer_banner_area.type_a p.free_trial a {
+        margin: 0 auto;
+        width: 216px;
+        height: 40px;
+        display: block;
+        position: relative;
+        background: #ffeb3b;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_a p.free_trial a:after, .footer_banner_area.type_a p.free_trial a:before {
+        content: "";
+        width: 20px;
+        height: 40px;
+        display: block;
+        background: no-repeat center center/20px 40px;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_a p.free_trial a:before {
+        background-image: url(../images/common_module/sp/btn_left.png);
+        left: -20px
+    }
+
+    .footer_banner_area.type_a p.free_trial a:after {
+        background-image: url(../images/common_module/sp/btn_right.png);
+        right: -20px
+    }
+
+    .footer_banner_area.type_b ul.banners {
+        margin-bottom: 72px;
+        width: 100%
+    }
+
+    .footer_banner_area.type_b ul.banners:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both
+    }
+
+    .footer_banner_area.type_b ul.banners li {
+        margin: 0 auto;
+        width: 288px;
+        height: 288px;
+        background: no-repeat center center/contain;
+        position: relative
+    }
+
+    .footer_banner_area.type_b ul.banners li a {
+        display: block
+    }
+
+    .footer_banner_area.type_b ul.banners li a span.title {
+        margin-bottom: 13px;
+        padding-top: 15px;
+        width: 100%;
+        height: 72px;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
+        color: #424242
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl {
+        width: 100%
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dt {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: #424242
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd {
+        width: 100%;
+        position: absolute;
+        bottom: -20px;
+        left: 0
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span {
+        margin: 0 auto;
+        width: 128px;
+        height: 40px;
+        display: block;
+        position: relative;
+        background: #ffeb3b;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span:after, .footer_banner_area.type_b ul.banners li a dl dd span:before {
+        content: "";
+        width: 20px;
+        height: 40px;
+        display: block;
+        background: no-repeat center center/20px 40px;
+        position: absolute;
+        top: 0
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span:before {
+        background-image: url(../images/common_module/sp/btn_left.png);
+        left: -20px
+    }
+
+    .footer_banner_area.type_b ul.banners li a dl dd span:after {
+        background-image: url(../images/common_module/sp/btn_right.png);
+        right: -20px
+    }
+
+    .footer_banner_area.type_b ul.banners li.simulator {
+        display: none
+    }
+
+    .footer_banner_area.type_b ul.banners li.trial {
+        background-image: url(../images/common_module/sp/bg_banner_trial.png)
+    }
+
+    .common_site_footer {
+        display: block !important;
+        background: #eee
+    }
+
+    .common_site_footer .nav .nav_head {
+        margin-bottom: 16px;
+        position: relative;
+        overflow: hidden
+    }
+
+    .common_site_footer .nav .nav_head .nav_head_catch {
+        margin: 40px auto 10px auto;
+        width: 286px;
+        overflow: hidden
+    }
+
+    .common_site_footer .nav .nav_head .nav_head_catch a {
+        display: block;
+        float: left;
+        line-height: 0
+    }
+
+    .common_site_footer .nav .nav_head .nav_head_catch a img {
+        width: 98px;
+        height: 17px
+    }
+
+    .common_site_footer .nav .nav_head .nav_head_catch p {
+        margin: 0;
+        float: right;
+        height: 21px;
+        letter-spacing: calc(40em / 1000);
+        line-height: 21px;
+        font-size: 14px;
+        color: #000
+    }
+
+    .common_site_footer .nav .nav_head .nav_head_sns {
+        width: 100%;
+        position: absolute;
+        top: 32px;
+        text-align: center;
+        line-height: 1;
+        font-size: 0
+    }
+
+    .common_site_footer .nav .nav_head .nav_head_sns .fb-like, .common_site_footer .nav .nav_head .nav_head_sns iframe {
+        margin: 0 5px;
+        display: inline-block
+    }
+
+    .common_site_footer .nav .nav_row {
+        padding-bottom: 16px;
+        overflow: hidden
+    }
+
+    .common_site_footer .nav .nav_row .nav_col dl{
+      padding: 12px 16px;
+      width: 50vw;
+      display: block;
+      box-sizing: border-box;
+      float: left;
+      font-size: 14px;
+      font-weight: 400;
+      color: #424242
+    }
+
+    .common_site_footer .nav .nav_row .nav_col dl dt{
+    }
+
+    .common_site_footer .nav .nav_row .nav_col dl dd{
+      display: none;
+    }
+
+    .common_site_footer .footer_sub_nav{
+      border-top: 1px solid #cccccc;
+      margin: 0 16px;
+    }
+
+    .common_site_footer .footer_sub_nav ul.sub_nav{
+      padding: 25px 0;
+      overflow: hidden;
+    }
+
+    .common_site_footer .footer_sub_nav ul.sub_nav li{
+      padding: 8px 0;
+      width: 50%;
+      display: block;
+      box-sizing: border-box;
+      float: left;
+      line-height: 14px;
+      font-size: 10px;
+      color: #424242
+    }
+
+    .common_site_footer ul.nav_apps{
+      margin-bottom: 40px;
+      text-align: center;
+      line-height: 0;
+      font-size: 0;
+      overflow: hidden;
+    }
+
+    .common_site_footer ul.nav_apps li{
+      width: 50%;
+      display: block;
+      float: left;
+      box-sizing: border-box;
+    }
+    .common_site_footer ul.nav_apps li.sns{
+      margin-bottom: 30px;
+    }
+    .common_site_footer ul.nav_apps li.sns.tw{
+      padding-right: 8px;
+      text-align: right;
+    }
+    .common_site_footer ul.nav_apps li.sns.fb{
+      padding-left: 8px;
+      text-align: left;
+    }
+    .common_site_footer ul.nav_apps li.sns img{
+      width: 30px;
+      height: 30px;
+    }
+    .common_site_footer ul.nav_apps li.app.app_store{
+      padding-right: 16px;
+      text-align: right;
+    }
+    .common_site_footer ul.nav_apps li.app.google_play{
+      text-align: left;
+    }
+    .common_site_footer ul.nav_apps li.app img{
+      height: 40px;
+      width: auto;
+    }
+    .common_site_footer ul.nav_apps li a{
+      display: inline-block;
+    }
+
+    .common_site_footer .nav .good_design {
+        padding: 0 16px;
+        border-top: 1px solid #ccc;
+        overflow: hidden
+    }
+
+    .common_site_footer .nav .good_design .inset {
+        margin: 32px 0 0 0
+    }
+
+    .common_site_footer .nav .good_design .inset p.logo {
+        margin-bottom: 11px;
+        text-align: center
+    }
+
+    .common_site_footer .nav .good_design .inset p.logo img {
+        width: 142.5px;
+        height: 24px
+    }
+
+    .common_site_footer .nav .good_design .inset p.text {
+        font-size: 14px;
+        color: #757575
+    }
+
+    .common_site_footer .nav dl.nav_app {
+        padding: 0 8px 33px 8px;
+        overflow: hidden
+    }
+
+    .common_site_footer .nav dl.nav_app dt.nav_app_head {
+        margin: 32px auto 21px auto;
+        width: 200px;
+        overflow: hidden;
+        text-align: center;
+        line-height: 23px
+    }
+
+    .common_site_footer .nav dl.nav_app dt.nav_app_head img {
+        width: 14px;
+        height: 22px;
+        margin-right: 10px;
+        float: left
+    }
+
+    .common_site_footer .nav dl.nav_app dt.nav_app_head span {
+        display: block;
+        text-align: left;
+        line-height: 22px;
+        font-size: 14px;
+        font-weight: 700
+    }
+
+    .common_site_footer .nav dl.nav_app dt.nav_app_head span br {
+        display: none
+    }
+
+    .common_site_footer .nav dl.nav_app dd.nav_app_link {
+        width: 50%;
+        float: left;
+        text-align: center
+    }
+
+    .common_site_footer .corp {
+        padding: 28px 16px 60px 16px;
+        background: #616161
+    }
+
+    .common_site_footer .corp ul.corp_lists {
+        margin: 0 0 20px 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .common_site_footer .corp ul.corp_lists li {
+        padding: 12px 0;
+        width: 50%;
+        display: block;
+        box-sizing: border-box;
+        float: left;
+        line-height: 14px;
+        font-size: 10px;
+        color: #e0e0e0
+    }
+
+    .common_site_footer .corp ul.corp_lists li a {
+        color: #e0e0e0
+    }
+
+    .common_site_footer .corp ul.corp_lists li:first-child {
+        padding-left: 0
+    }
+
+    .common_site_footer .corp ul.corp_lists li:last-child {
+        padding-right: 0;
+        border: none
+    }
+
+    .common_site_footer .corp .corp_copyright {
+        line-height: 16px;
+        font-size: 11px;
+        color: #bdbdbd
+    }
+
+    .common_site_footer .cybozu_group_site {
+        padding: 23px 16px;
+        background: #bdbdbd
+    }
+
+    .common_site_footer .cybozu_group_site .inner {
+        overflow: hidden
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl {
+        margin-bottom: 10px
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dt {
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #eee
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul {
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li {
+        margin-bottom: 2px;
+        width: 50%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li:last-child:before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 8px 8px;
+      border-color: transparent transparent #bdbdbd transparent;
+      position: absolute;
+      right: 1px;
+      bottom: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li:nth-child(odd) {
+        padding-right: 1px;
+        float: left
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li:nth-child(even) {
+        padding-left: 1px;
+        float: right
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li a {
+        padding-top: 26.5734265732%;
+        width: 100%;
+        height: 0;
+        display: block;
+        border: none;
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li a span {
+        height: 1px;
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.cybozu a {
+        background-image: url(../images/common_module/sp/img_footer_banner_cybozu.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.kintone a {
+        background-image: url(../images/common_module/sp/img_footer_banner_kintone.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.garoon a {
+        background-image: url(../images/common_module/sp/img_footer_banner_garoon.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.office a {
+        background-image: url(../images/common_module/sp/img_footer_banner_office.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.mailwise a {
+        background-image: url(../images/common_module/sp/img_footer_banner_mailwise.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.teamwork a {
+        background-image: url(../images/common_module/sp/img_footer_banner_teamwork.png)
+    }
+
+    .common_site_footer .cybozu_group_site .inner dl dd ul li.cybozushiki a {
+        background-image: url(../images/common_module/sp/img_footer_banner_cybozushiki.png)
+    }
+
+    .overlay_movie {
+        display: none;
+        position: fixed;
+        top: -10px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        background-color: #fff;
+        overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        z-index: 200
+    }
+
+    .overlay_movie .container {
+        display: table;
+        padding: 10px 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .overlay_movie .container .inner {
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .overlay_movie .container .inner iframe {
+        margin: 0 auto;
+        width: 320px;
+        height: 180px;
+        display: block
+    }
+
+    .overlay_movie .container .inner .close {
+        margin-top: 20px;
+        width: 100%;
+        float: none;
+        opacity: 1;
+        text-align: center
+    }
+
+    .overlay_movie .container .inner .close img {
+        width: 46px;
+        cursor: pointer
+    }
+
+    a.move_page_top {
+        display: none
+    }
+
+    .sp_none {
+        display: none !important
+    }
+}
+
+@media screen and (min-width:768px) {
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.kintone_arukikata, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu {
+        margin-right: 8px;
+        margin-bottom: 14px;
+        width: 314px;
+        height: 120px;
+        float: left
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive {
+        margin-right: 0
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.kintone_arukikata a, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu a {
+        padding-top: 72px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        background-color: #fff;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        color: #424242
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.kintone_arukikata a {
+        background-image: url(/resource/images/common_module/pc/img_kintone_arukikata.png);
+        background-size: 100% auto
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.kintone_arukikata a:hover {
+        border: 1px solid #fba100;
+        color: #fba100
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive span, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.kintone_arukikata span, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu span {
+        display: block;
+        text-align: center;
+        line-height: 1;
+        height: auto;
+        font-size: 12px
+    }
+
+    header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.event_hive span span, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.kintone_arukikata span span, header.common_header .main_header .inner nav.navigations .menu_frame .main_menu>ul>li>.sub .sub_inner ul li.support_menu span span {
+        font-size: 14px;
+        padding-top: 5px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.support_menu {
+        background: url(/resource/images/common/ico_menu.png) no-repeat left center;
+        background-size: 16px 16px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.arukikata {
+        background: url(/resource/images/common/ico_arukikata.png) no-repeat left center;
+        background-size: 16px 16px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.hive {
+        margin-right: 0;
+        background: url(/resource/images/common/ico_hive.png) no-repeat left center;
+        background-size: 16px 16px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.support_menu.on {
+        background: url(/resource/images/common/ico_menu_on.png) no-repeat left center;
+        background-size: 16px 16px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.arukikata.on {
+        background: url(/resource/images/common/ico_arukikata_on.png) no-repeat left center;
+        background-size: 16px 16px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.hive.on {
+        margin-right: 0;
+        background: url(/resource/images/common/ico_hive_on.png) no-repeat left center;
+        background-size: 16px 16px
+    }
+}
+
+@media screen and (max-width:767px) {
+    header.common_header .local_content .local_navigations ul.app_nav li.support_menu {
+        width: 33%
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.arukikata {
+        width: 33%
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.hive {
+        width: 33%
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.support_menu a {
+        background: url(/resource/images/common_module/sp/ico_menu.png) no-repeat center 14px;
+        background-size: 18px 25px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.arukikata a {
+        background: url(/resource/images/common_module/sp/ico_arukikata.png) no-repeat center 14px;
+        background-size: 18px 25px
+    }
+
+    header.common_header .local_content .local_navigations ul.app_nav li.hive a {
+        margin-right: 0;
+        background: url(/resource/images/common_module/sp/ico_hive.png) no-repeat center 14px;
+        background-size: 18px 25px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .footer_banner_area .inner ul.more_contents li a dl dt {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        padding-top: 12px;
+        color: #000
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer_banner_area .inner ul.more_contents li a dl dt {
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000
+    }
+}

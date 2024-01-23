@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Header, Hero2, Bio, Works, Footer, Note, Monex ,Medium } from "../../index";
+import { Header, Hero2, Bio, Works, Footer, Note, Medium, CreativeExploration } from "../../index";
 
 function Home({ isJapanese }) {
   const [scrollY, setScrollY] = useState(0);
@@ -79,10 +79,10 @@ function Home({ isJapanese }) {
 
       <Bio isJapanese={isJapanese} />
       <Works isJapanese={isJapanese} />
+      <CreativeExploration isJapanese={isJapanese} />
       <Note isJapanese={isJapanese} />
       <Medium />
       <Footer />
-      {/* <Monex /> */}
     </main>
   );
 }

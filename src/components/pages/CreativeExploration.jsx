@@ -5,9 +5,21 @@ function CreativeExploration() {
     return (
         <section className="creative-exploration">
             <h2>Creative Exploration</h2>
-            <p>自由な創作をたまにします。</p>
+            <p>自由な創作をごく稀にします</p>
             <Spline style={{ width: "90%" }} className='spline' scene="https://prod.spline.design/HS2WPsXRP-WLukO0/scene.splinecode" />
             <div className="ce_text-container">
+
+                <div className="ce_work-time">
+                    <div className="ce_work-date">Jan 2024</div>
+                    <img className="ce_work-tool-logo1" src="Figma logo.svg" alt="Figma logo" />
+                    <img className="ce_work-tool-logo2" src="Spline logo.png" alt="Spline logo" />
+
+                    <div className='ce_work-period'>
+                        <p>制作期間：</p>
+                        <p>2週間</p>
+                    </div>
+                </div>
+
                 <h3>Vision Pro + Spotify</h3>
                 <p>Vision Proについて調べるうちに妄想が膨らみ制作に至りました。よく使うSpotifyのLyricsをスマホの画面を覗き込まずに空間に表示できないかなあ...なんて考えをビジュアルにしました。マウスを押しながら自由にどの角度からでもご覧いただけます。💡 サイズが大きいためパソコンで見ていただきたいです！</p>
                 <div className="arrow-text-container">

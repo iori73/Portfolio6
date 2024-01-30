@@ -79,7 +79,7 @@ const Work = ({ work, isJapanese }) => {
           <p><small className={`toggleBox-en ${isJapanese ? "hidden" : ""
             }`}>Open a Figma file</small></p>
           <p><small className={`toggleBox-jp ${isJapanese ? "" : "hidden"
-            }`}>Figmaファイルに遷移します</small></p>
+            }`}>Webページに遷移します</small></p>
           {/* <Link to="/work1"> */}
           <a href={`${work.url}`} target="_blank">
             <svg

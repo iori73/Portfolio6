@@ -15,7 +15,7 @@ const WorksData = [
     descJP: '知り合いの紹介でこの提案をしてくださった方は企業にビジネスアイデアを提出しようとしており、「AIとのチャットx就活サービス」というアイデアからこのサービスを考えついたそうです。そのアイデアをデザイン化し、企業の担当者にアピールしたいとのことでご依頼をいただきました。',
     descEN: 'The person who proposed this idea was trying to submit a business idea to a company, and came up with this service from the idea of "AI chat x job hunting service" that was introduced by an acquaintance. I was asked to design the idea and appeal to the company.',
     className: 'path-finder',
-    url: 'https://www.figma.com/community/file/1306204245300287136/path-finder',
+    url: 'https://student.redesigner.jp/portfolios/PFd88efd577cf64d17b8dcb17fe9062918',
   },
 
   {

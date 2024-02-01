@@ -26,15 +26,15 @@ const WorksData = [
     periodEN: '1 week',
     semiTitleJP: 'インターンシップ選考課題 家計簿アプリ ',
     semiTitleEN: 'Internship selection task Household account book app',
-    titleJP: 'Money Forest',
-    titleEN: 'Money Forest',
+    titleJP: 'Asset Forest',
+    titleEN: 'Asset Forest',
     image1: 'works__images/Money Forest1.png',
     image2: 'works__images/Money Forest2.png',
     alt: 'household account book app',
     descJP: 'インターンシップ選考課題として、家計簿アプリを作成しました。初めて１週間という短い期間でデザインを考えました。現行のアプリの調査やユーザーに求められる機能の選出など、反省点や改善点は多くあるものの自分なりのアウトプットに落とし込むことができました。',
     descEN: 'I created a household account book app as an internship selection task. I designed it in a short period of one week for the first time. Although there are many points of reflection and improvement, such as investigating the current app and selecting the functions required by the user, I was able to incorporate it into my own output.',
     className: 'money-forest',
-    url: 'https://www.figma.com/community/file/1325299621244712631/money-forest',
+    url: 'https://student.redesigner.jp/portfolios/PFff143303e9869f7d5a42e0f57c95dc21',
   },
 
 

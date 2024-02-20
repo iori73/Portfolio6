@@ -22,11 +22,11 @@ const Note = ({ isJapanese }) => {
         console.error(
           "There has been a problem with your fetch operation:",
           error
-        );const formatDate = (dateString) => {
+        ); const formatDate = (dateString) => {
           const date = new Date(dateString);
           return date.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
         };
-        
+
       }
     }
 
@@ -38,7 +38,7 @@ const Note = ({ isJapanese }) => {
     return new Date(dateString).toLocaleDateString("ja-JP", options);
   }
 
-  
+
 
 
   const Article = ({ title, link, description, thumbnail, pubDate }) => {
@@ -68,36 +68,35 @@ const Note = ({ isJapanese }) => {
       <div className="note__container">
         <h2>note</h2>
 
-        <div className="articles-container">
+        <div className="note__articles-container">
           {articles.map((article, index) => (
             <Article key={index} {...article} isJapanese={isJapanese} />
           ))}
         </div>
 
 
-
+        {/* view more */}
         <div
-          className={`note__button-container toggleBox-jp ${
-            isJapanese ? "" : "hidden"
-          }`}
+          className={`note__button-container toggleBox-jp ${isJapanese ? "" : "hidden"
+            }`}
         >
           <div className="note__profile-container">
-          <img
-            className="note__profile-img"
-            src="note-profile.png"
-            alt="note profile"
-          />
-          <p className="note__profile-p">
-            イオリ <br />
-            大学3年生。独学で英語でプログラミングとデザインの勉強中。
-          </p>
+            <img
+              className="note__profile-img"
+              src="note-profile.png"
+              alt="note profile"
+            />
+            <p className="note__profile-p">
+              イオリ <br />
+              大学3年生。独学で英語でプログラミングとデザインの勉強中。
+            </p>
           </div>
 
-          <button 
-          className="view-more-container"
-          onClick={() =>
-            (window.location.href = "https://note.com/yoriss_b0607")
-          }
+          <button
+            className="view-more-container"
+            onClick={() =>
+              (window.location.href = "https://note.com/yoriss_b0607")
+            }
           >
             <p className="view-more-container-p">もっと見る</p>
             <svg
@@ -132,34 +131,33 @@ const Note = ({ isJapanese }) => {
         </div>
 
 
-
+        {/* view more en */}
         <div
-          className={`note__button-container toggleBox-en ${
-            isJapanese ? "hidden" : " "
-          }`}
+          className={`note__button-container toggleBox-en ${isJapanese ? "hidden" : " "
+            }`}
         >
           <div className="note__profile-container">
-          <img
-            className="note__profile-img"
-            src="note-profile.png"
-            alt="note profile"
-          />
-          <p className="note__profile-p">
-            Iori <br />
-            A sophomore. I'm studying programming and design in Japanese and English by myself.
-          </p>
+            <img
+              className="note__profile-img"
+              src="note-profile.png"
+              alt="note profile"
+            />
+            <p className="note__profile-p">
+              Iori <br />
+              A sophomore. I'm studying programming and design in Japanese and English by myself.
+            </p>
           </div>
 
 
-          <button 
-          className="view-more-container"
-          onClick={() =>
-            (window.location.href = "https://note.com/yoriss_b0607")
-          }
+          <button
+            className="view-more-container"
+            onClick={() =>
+              (window.location.href = "https://note.com/yoriss_b0607")
+            }
 
           >
-          <p className="view-more-container-p">view more</p>
-          <svg
+            <p className="view-more-container-p">view more</p>
+            <svg
               className="arrow-container"
               width="100"
               height="100"
@@ -189,6 +187,7 @@ const Note = ({ isJapanese }) => {
             </svg>
           </button>
         </div>
+
       </div>
     </section>
   );

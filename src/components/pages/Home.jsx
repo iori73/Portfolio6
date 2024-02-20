@@ -83,6 +83,9 @@ function Home({ isJapanese }) {
       <Note isJapanese={isJapanese} />
       <Medium />
       <Footer />
+      {/* <div className="">
+      <iframe className="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/fe4bbc9756d54defa43b1cb1d13e63a5?slide=34" title="Designship2022 デザインエンジニアが語る、隣接領域を学ぶということ" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+      </div> */}
     </main>
   );
 }

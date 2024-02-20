@@ -967,7 +967,7 @@ p {
   object-fit: cover;
 }
 
-.articles-container {
+.note__articles-container {
   width: 100%;
   margin: 5rem auto;
   display: flex;
@@ -1173,7 +1173,7 @@ p {
   margin: 0 auto;
 }
 
-.medium_I-post {
+.medium__I-post {
   width: fit-content;
   height: 100%;
   margin: 1rem auto;
@@ -1181,7 +1181,7 @@ p {
 
 }
 
-.medium_container {
+.medium__container {
   width: 80%;
   margin: 0 auto;
 }
@@ -1189,14 +1189,14 @@ p {
 /* Section Title */
 .medium h2 {}
 
-.medium_story-container {
+.medium__stories-container {
   width: 100%;
   height: 100%;
 }
 
 
 
-.medium_story {
+.medium__story {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1209,7 +1209,7 @@ p {
   border-radius: 20px;
 }
 
-.medium_story:hover {
+.medium__story:hover {
   cursor: pointer;
   color: #000;
 }
@@ -1260,6 +1260,41 @@ p {
   gap: 1rem;
   flex-wrap: wrap;
 
+}
+
+.medium__button-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  border: 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: transparent;
+  color: var(--text);
+  padding-right: 4rem;
+  gap: 1rem;
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.medium__profile-container {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.medium__profile-img {
+  border-radius: 100%;
+  width: 5vw;
+  height: 5vw;
+}
+
+.medium__profile-p {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
 }
 
 
@@ -1581,7 +1616,7 @@ p {
     height: 20vh;
   }
 
-  .articles-container {
+  .note__articles-container {
     margin: 2rem auto;
     gap: 0rem 1rem;
   }
@@ -1639,11 +1674,11 @@ p {
   }
 
   /* MEDIUM */
-  .medium_container {
+  .medium__container {
     width: 90%;
   }
 
-  .medium_story {
+  .medium__story {
     flex-direction: column;
     gap: 2rem;
   }
@@ -1660,6 +1695,37 @@ p {
     text-align: left;
     font-size: 1.5rem;
   }
+
+  .medium__profile-container {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .medium__button-container {
+    font-size: 1rem;
+    min-width: 60%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 0;
+    gap: 2rem;
+  }
+
+
+
+  .medium__profile-img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .medium__profile-p {
+    text-align: center;
+  }
+
+
 
 
   /* FOOTER */
@@ -1684,3 +1750,5 @@ p {
     background-size: contain;
   }
 }
+
+

@@ -2227,9 +2227,9 @@ html.fixed .main_header {
 }
 
 @media screen and (max-width:767px) {
-    body {
+    /* body {
         padding-top: 51px
-    }
+    } */
 
     body a:hover{
       opacity: 1;

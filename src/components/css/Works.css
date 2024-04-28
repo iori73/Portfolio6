@@ -19,7 +19,7 @@
   align-items: center;
   /* gap: 2rem; */
   width: 92%;
-  height: 65vh;
+  min-height: 65vh;
   margin: 10rem auto;
   padding: 3rem;
   z-index: 9;
@@ -55,7 +55,7 @@
   width: 35%;
   height: auto;
   position: absolute;
-  top: −10vh;
+  top: -10vh;
   left: 10%;
   z-index: 10;
 }
@@ -69,6 +69,25 @@
   z-index: 9;
 }
 
+
+/* knowledge work */
+.works__work.wk-internship {
+  flex-direction: row-reverse;
+}
+
+.wk-internship .work-img-container .works-img1 {
+  top: -10vh;
+  left: 52%;
+}
+
+.wk-internship .work-img-container .works-img2 {
+  top: 0vh;
+  left: 18%;
+}
+
+
+
+/* money forest */
 .works__work.money-forest {
   flex-direction: row-reverse;
 }
@@ -260,6 +279,10 @@
     top: 0vh;
     left: 45%;
     z-index: 9;
+  }
+
+    .works__work.wk-internship {
+    flex-direction: column;
   }
   
   .works__work.money-forest {

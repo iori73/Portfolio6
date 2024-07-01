@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 const socialLinks = [
-  { href: "https://github.com/yoriss67", src: "icons/github-orgnl.svg" },
+  { href: "https://github.com/iori73", src: "icons/github-orgnl.svg" },
 
   { href: "https://twitter.com/iori73wsy", src: "icons/x-twitter.svg" },
   { href: "https://www.linkedin.com/in/iori-kawano-131a4122a/", src: "icons/linkedin.svg"},
   { href: "https://student.redesigner.jp/students/afd0d567a69657ea22e57f9faf589f10", src: "icons/ReDesigner.svg"},
-  { href: "https://note.com/yoriss_b0607", src: "icons/note.svg" },
+  { href: "https://note.com/io_73", src: "icons/note.svg" },
   { href: "https://medium.com/@iori730002204294", src: "icons/medium.svg" },
 ];
 

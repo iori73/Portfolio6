@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get('/api/latest-articles', async (req, res) => {
   try {
-    const response = await fetch('https://note.com/yoriss_b0607/rss');
+    const response = await fetch("https://note.com/io_73/rss");
     if (!response.ok) {
       throw new Error('Network response was not ok ' + response.statusText);
     }

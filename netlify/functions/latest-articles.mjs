@@ -6,7 +6,7 @@ const parser = new xml2js.Parser();
 export async function handler() {
   try {
     console.log('latest-articles.mjs  Fetching RSS feed...');
-    const response = await fetch('https://note.com/yoriss_b0607/rss');
+    const response = await fetch("https://note.com/io_73/rss");
     if (!response.ok) {
       return { statusCode: response.status, body: response.statusText };
     }

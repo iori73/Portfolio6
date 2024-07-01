@@ -95,7 +95,7 @@ const Note = ({ isJapanese }) => {
           <button
             className="view-more-container"
             onClick={() =>
-              (window.location.href = "https://note.com/yoriss_b0607")
+              (window.location.href = "https://note.com/io_73")
             }
           >
             <p className="view-more-container-p">もっと見る</p>
@@ -152,7 +152,7 @@ const Note = ({ isJapanese }) => {
           <button
             className="view-more-container"
             onClick={() =>
-              (window.location.href = "https://note.com/yoriss_b0607")
+              (window.location.href = "https://note.com/io_73")
             }
 
           >

@@ -5,7 +5,7 @@ const Note = ({ isJapanese }) => {
 
   useEffect(() => {
     const url =
-      "https://without-server.netlify.app/.netlify/functions/latest-articles";
+      "https://iori-portfolio.netlify.app/.netlify/functions/latest-articles";
     async function fetchNote() {
       try {
         const response = await fetch(url);

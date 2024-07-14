@@ -448,7 +448,7 @@ p {
 }
 
 .hero__uiux-text {
-  background-image: url("/public/hero__images/uiux-bg.png");
+  background-image: url("/hero__images/uiux-bg.png");
   /* -webkit-background-clip: text; */
   background-clip: text;
   color: transparent;

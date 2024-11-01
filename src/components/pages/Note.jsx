@@ -88,15 +88,15 @@ const Note = ({ isJapanese }) => {
             />
             <p className="note__profile-p">
               イオリ <br />
-              大学3年生。独学で英語でプログラミングとデザインの勉強中。
+              大学生。独学でプログラミングとデザインの勉強中。
             </p>
           </div>
 
           <button
             className="view-more-container"
-            onClick={() =>
-              (window.location.href = "https://note.com/io_73")
-            }
+            onClick={() => {
+              window.open("https://note.com/io_73", "_blank", "noopener,noreferrer");
+            }}
           >
             <p className="view-more-container-p">もっと見る</p>
             <svg

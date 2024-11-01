@@ -116,15 +116,15 @@ const Medium = () => {
             alt="medium profile"
           />
           <p className="medium__profile-p">
-          I'm a self-taught UI/UX and Frotend learner. <br /> I like technology, design and health.
+          I'm a self-taught UI/UX and Frotend learner. <br /> I like nature, design, and technology.
           </p>
           </div>
 
           <button 
           className="view-more-container"
-          onClick={() =>
-            (window.location.href = "https://medium.com/@iori730002204294")
-          }
+          onClick={() => {
+            window.open("https://medium.com/@iori730002204294", "_blank", "noopener,noreferrer");
+          }}
           >
             <p className="view-more-container-p">もっと見る</p>
             <svg

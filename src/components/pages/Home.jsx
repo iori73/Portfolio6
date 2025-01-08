@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Header, Hero2, Bio, Works, Footer, Note, Medium, CreativeExploration } from "../../index";
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Header, Hero2, Bio, Works, Footer, Note, Medium, CreativeExploration } from '../../index';
 
 function Home({ isJapanese }) {
   const [scrollY, setScrollY] = useState(0);
@@ -13,56 +13,49 @@ function Home({ isJapanese }) {
       setScrollY(newY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
 
   const isMobile = viewportWidth < 768;
 
   const profileStyle = isMobile
     ? {
-      top: "50vh",
-      left: "10%",
-      width: "80vw",
-      position: "absolute",
-      objectFit: "cover",
-    }
+        top: '50vh',
+        left: '10%',
+        width: '80vw',
+        position: 'absolute',
+        objectFit: 'cover',
+      }
     : {
-      top: scrollY > 60 ? "148vh" : "52vh",
-      left: scrollY > 60 ? "40%" : "24%",
-      width: "20vw",
-      position: "absolute",
+        top: scrollY > 60 ? '148vh' : '52vh',
+        left: scrollY > 60 ? '40%' : '24%',
+        width: '20vw',
+        position: 'absolute',
 
-      objectFit: "cover",
-    };
-
-
+        objectFit: 'cover',
+      };
 
   const profileAnimation = isMobile
     ? {
-      top: scrollY > 60 ? "108vh" : "70vh",
-      left: scrollY > 60 ? "28%" : "16%",
-      width: scrollY > 60 ? "45vw" : "40vw",
-      height: scrollY > 60 ? "45vw" : "60vw",
-      borderRadius: scrollY > 60 ? "100%" : "20px",
-      filter: scrollY > 60 ? "blur(0px)" : "blur(2px)",
-    }
+        top: scrollY > 60 ? '108vh' : '70vh',
+        left: scrollY > 60 ? '28%' : '16%',
+        width: scrollY > 60 ? '45vw' : '40vw',
+        height: scrollY > 60 ? '45vw' : '60vw',
+        borderRadius: scrollY > 60 ? '100%' : '20px',
+        filter: scrollY > 60 ? 'blur(0px)' : 'blur(2px)',
+      }
     : {
-      top: scrollY > 60 ? "110vh" : "70vh",
-      left: scrollY > 60 ? "38%" : "23%",
-      width: scrollY > 60 ? "25vw" : "20vw",
-      height: scrollY > 60 ? "25vw" : "30vw",
-      borderRadius: scrollY > 60 ? "100%" : "20px",
-      filter: scrollY > 60 ? "blur(0px)" : "blur(2px)",
-    };
-
-
-
-
+        top: scrollY > 60 ? '110vh' : '70vh',
+        left: scrollY > 60 ? '38%' : '23%',
+        width: scrollY > 60 ? '25vw' : '20vw',
+        height: scrollY > 60 ? '25vw' : '30vw',
+        borderRadius: scrollY > 60 ? '100%' : '20px',
+        filter: scrollY > 60 ? 'blur(0px)' : 'blur(2px)',
+      };
 
   return (
     <main className="home">

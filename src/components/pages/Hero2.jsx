@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-import HeroParallax from "./HeroParallax";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import HeroParallax from './notinuse/HeroParallax';
 
 function Hero() {
-
-
   // 一つのオブジェクトですべてのビューポート内視認性ステートを管理
   const [inViewStates, setInViewStates] = useState({
     h1: false,
@@ -32,8 +30,6 @@ function Hero() {
   const [refLongArrow, inViewLongArrow] = useInView({ triggerOnce: true });
   const [refOrangePolygon, inViewOrangePolygon] = useInView({ triggerOnce: true });
 
-
-
   // スクロールポジションの追跡
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -42,8 +38,8 @@ function Hero() {
       setScrollPosition(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // 視認性が変わった時にステートを更新
@@ -57,10 +53,9 @@ function Hero() {
     });
   }, [inViewH1, inViewFront, inViewUIUX, inViewMssg, inViewAnd]);
 
-
   // frontend codes
   useEffect(() => {
-    setInViewStates(prev => ({
+    setInViewStates((prev) => ({
       ...prev,
       code1: inViewCode1,
       code2: inViewCode2,
@@ -80,15 +75,8 @@ function Hero() {
   //   }));
   // }, [inViewCode1, inViewCode2, inViewCode3, inViewCode4]);
 
-
   // 背景色
-  function getInterpolatedColor(
-    scrollPosition,
-    startRGB,
-    middleRGB,
-    endRGB,
-    maxScroll
-  ) {
+  function getInterpolatedColor(scrollPosition, startRGB, middleRGB, endRGB, maxScroll) {
     const ratio = Math.min(scrollPosition / maxScroll, 1);
 
     let r, g, b;
@@ -117,13 +105,7 @@ function Hero() {
   const maxScrollValue = 700;
 
   // コンポーネント内での使用例
-  const bgColor = getInterpolatedColor(
-    scrollPosition,
-    startColor,
-    middleColor,
-    endColor,
-    maxScrollValue
-  );
+  const bgColor = getInterpolatedColor(scrollPosition, startColor, middleColor, endColor, maxScrollValue);
 
   // skeleton
   const [imageLoaded, setImageLoaded] = useState({
@@ -144,8 +126,6 @@ function Hero() {
     });
   }
 
-
-
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -157,13 +137,7 @@ function Hero() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-
-
   const [textContainerAnimated, setTextContainerAnimated] = useState(false);
-
-
-
-
 
   return (
     <section className="hero">
@@ -179,14 +153,14 @@ function Hero() {
       >
         <motion.h1
           initial={{ opacity: 0 }}
-          animate={inViewH1 ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+          animate={inViewH1 ? { y: '0vw', opacity: 1, scale: 1 } : {}}
           transition={{
             ease: [0.2, 0, 0.6, 1],
             duration: 1,
-            delay: .2,
+            delay: 0.2,
             bounce: 0.3,
           }}
-          className={`hero__name  ${inViewH1 ? "true" : "false"}`}
+          className={`hero__name  ${inViewH1 ? 'true' : 'false'}`}
           ref={refH1}
         >
           Hi, I'm Iori !
@@ -194,40 +168,39 @@ function Hero() {
 
         <div className="hero__message-container">
           <motion.p
-            initial={{ opacity: 0, y: "2vh" }}
-            animate={inViewMssg ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+            initial={{ opacity: 0, y: '2vh' }}
+            animate={inViewMssg ? { y: '0vw', opacity: 1, scale: 1 } : {}}
             transition={{
               ease: [0.2, 0, 0.6, 1],
               duration: 1,
-              delay: .5,
+              delay: 0.5,
               bounce: 0.3,
             }}
-            className={`hero__message ${inViewMssg ? "true" : "false"}`}
+            className={`hero__message ${inViewMssg ? 'true' : 'false'}`}
             ref={refMssg}
           >
-            I'm a self-taught learner of{" "}
+            I'm a self-taught learner of{' '}
           </motion.p>
 
           <div className={`hero__title`}>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={inViewFront ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+              animate={inViewFront ? { y: '0vw', opacity: 1, scale: 1 } : {}}
               transition={{
                 ease: [0.2, 0, 0.6, 1],
                 duration: 2,
                 delay: 2,
                 bounce: 0.3,
               }}
-              className={`hero__frontend  ${inViewFront ? "true" : "false"}`}
+              className={`hero__frontend  ${inViewFront ? 'true' : 'false'}`}
               ref={refFront}
             >
-
               <h2 className={`hero__frontend-text `}>Frontend</h2>
             </motion.div>
 
             <motion.p
-              initial={{ opacity: 0, y: "1vh" }}
-              animate={inViewAnd ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+              initial={{ opacity: 0, y: '1vh' }}
+              animate={inViewAnd ? { y: '0vw', opacity: 1, scale: 1 } : {}}
               transition={{
                 ease: [0.2, 0, 0.6, 1],
                 duration: 1,
@@ -242,48 +215,41 @@ function Hero() {
 
             <motion.div
               initial={{ opacity: 0 }}
-              animate={inViewUIUX ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+              animate={inViewUIUX ? { y: '0vw', opacity: 1, scale: 1 } : {}}
               transition={{
                 ease: [0.2, 0, 0.6, 1],
                 duration: 2,
                 delay: 3.5,
                 bounce: 0.3,
               }}
-              className={`hero__uiux  ${inViewUIUX ? "true" : "false"}`}
+              className={`hero__uiux  ${inViewUIUX ? 'true' : 'false'}`}
               ref={refUIUX}
             >
-
               <h2 className={`hero__uiux-text`}>UI / UX</h2>
             </motion.div>
-
           </div>
         </div>
       </motion.div>
 
-
-
-
       <div className="hero__left-container">
         <div className="left-container-pr">
-
           <div className="frontend-codes-container">
             {textContainerAnimated && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: .05, duration: 2 }}
+                transition={{ delay: 0.05, duration: 2 }}
                 className="frontend-codes"
               >
-
                 <div className="row row1">
                   {/* <div className="green green-code1 code w-lg"></div> */}
                   <motion.div
                     initial={{ opacity: 0 }}
-                    animate={inViewCode1 ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+                    animate={inViewCode1 ? { y: '0vw', opacity: 1, scale: 1 } : {}}
                     transition={{
                       ease: [0.2, 0, 0.6, 1],
                       duration: 1,
-                      delay: .1,
+                      delay: 0.1,
                       bounce: 0.3,
                     }}
                     className="green green-code1 code w-lg"
@@ -296,11 +262,11 @@ function Hero() {
                   <div className="orange orange-code1 code w-sm"></div>
                   <motion.div
                     initial={{ opacity: 0 }}
-                    animate={inViewCode2 ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+                    animate={inViewCode2 ? { y: '0vw', opacity: 1, scale: 1 } : {}}
                     transition={{
                       ease: [0.2, 0, 0.6, 1],
                       duration: 1,
-                      delay: .3,
+                      delay: 0.3,
                       bounce: 0.3,
                     }}
                     className="purple purple-code1 code w-md"
@@ -309,19 +275,16 @@ function Hero() {
                   <div className="blue blue-code1 code w-lg"></div>
                 </div>
 
-
-
-
                 <div className="row row3">
                   <div className="yellow yellow-code2 code w-lg"></div>
                   {/* <div className="green green-code2 code w-sm"></div> */}
                   <motion.div
                     initial={{ opacity: 0 }}
-                    animate={inViewCode3 ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+                    animate={inViewCode3 ? { y: '0vw', opacity: 1, scale: 1 } : {}}
                     transition={{
                       ease: [0.2, 0, 0.6, 1],
                       duration: 1,
-                      delay: .6,
+                      delay: 0.6,
                       bounce: 0.3,
                     }}
                     className="green green-code2 code w-sm"
@@ -344,11 +307,11 @@ function Hero() {
                   {/* <div className="green green-code4 code w-sm"></div> */}
                   <motion.div
                     initial={{ opacity: 0 }}
-                    animate={inViewCode4 ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+                    animate={inViewCode4 ? { y: '0vw', opacity: 1, scale: 1 } : {}}
                     transition={{
                       ease: [0.2, 0, 0.6, 1],
                       duration: 1,
-                      delay: .8,
+                      delay: 0.8,
                       bounce: 0.3,
                     }}
                     className="green green-code4 code w-sm"
@@ -356,16 +319,11 @@ function Hero() {
                   ></motion.div>
                   <div className="orange orange-code2 code w-lg"></div>
                 </div>
-
-
               </motion.div>
             )}
           </div>
-
         </div>
       </div>
-
-
 
       <div className="hero__right-container">
         {/* bg */}
@@ -389,11 +347,11 @@ function Hero() {
 
                 <motion.img
                   initial={{ opacity: 0 }}
-                  animate={inViewLongArrow ? { y: "0vw", opacity: 1, scale: 1 } : {}}
+                  animate={inViewLongArrow ? { y: '0vw', opacity: 1, scale: 1 } : {}}
                   transition={{ ease: [0.2, 0, 0.6, 1], duration: 1, delay: 2.4, bounce: 0.3 }}
                   ref={refLongArrow}
-                  className="long-arrow" 
-                  src="hero__images/uiux/long arrow.svg" 
+                  className="long-arrow"
+                  src="hero__images/uiux/long arrow.svg"
                   alt=""
                 />
 
@@ -414,10 +372,16 @@ function Hero() {
                 {/* <img className="orange-polygon" src="hero__images/uiux/orange polygon.svg" alt="" /> */}
                 <motion.img
                   initial={{ opacity: 0 }}
-                  animate={inViewOrangePolygon ? { y: isMobile ? "-2vh" : "-5vh", x: isMobile ? "3vw" : "0vw", opacity: 1, scale: 1 } : {}}
+                  animate={
+                    inViewOrangePolygon
+                      ? { y: isMobile ? '-2vh' : '-5vh', x: isMobile ? '3vw' : '0vw', opacity: 1, scale: 1 }
+                      : {}
+                  }
                   transition={{ ease: [0.2, 0, 0.6, 1], duration: 1, delay: 2.4, bounce: 0.3 }}
                   ref={refOrangePolygon}
-                  className="orange-polygon" src="hero__images/uiux/orange polygon.svg" alt="" 
+                  className="orange-polygon"
+                  src="hero__images/uiux/orange polygon.svg"
+                  alt=""
                 />
               </div>
 
@@ -429,13 +393,10 @@ function Hero() {
                 <div className="code"></div>
                 <img className="pink-polygon" src="hero__images/uiux/pink polygon.svg" alt="" />
               </div>
-
             </motion.div>
           )}
         </div>
       </div>
-
-
     </section>
   );
 }
